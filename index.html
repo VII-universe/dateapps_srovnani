@@ -1,0 +1,2051 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Best Dating Apps for Real-Life Meetings — 2026 Independent Review</title>
+<meta name="description" content="An independent, data-driven comparison of Tinder, Bumble, and Metemi on the only metric that matters: speed to real-life meeting."/>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;0,9..40,800;0,9..40,900;1,9..40,400&display=swap" rel="stylesheet"/>
+
+<style>
+/* ══════════════════════════════════════════════
+   TOKENS
+══════════════════════════════════════════════ */
+:root {
+  --bg:        #0D0E1A;
+  --bg2:       #12132A;
+  --surface:   #1A1B30;
+  --surface2:  #22243a;
+  --border:    rgba(255,255,255,.08);
+  --border2:   rgba(255,255,255,.14);
+
+  --t1:  #FFFFFF;
+  --t2:  rgba(255,255,255,.65);
+  --t3:  rgba(255,255,255,.35);
+
+  --blue:     #4F8EF7;
+  --blue-d:   #2563EB;
+  --blue-lt:  rgba(79,142,247,.12);
+  --blue-glow: rgba(79,142,247,.35);
+
+  --violet:    #A855F7;
+  --violet-lt: rgba(168,85,247,.12);
+
+  --pink:      #F472B6;
+  --pink-lt:   rgba(244,114,182,.12);
+
+  --teal:      #2DD4BF;
+  --teal-lt:   rgba(45,212,191,.12);
+
+  --amber:     #FBBF24;
+  --amber-lt:  rgba(251,191,36,.12);
+
+  --green:     #34D399;
+  --green-lt:  rgba(52,211,153,.12);
+
+  --red:       #F87171;
+  --red-lt:    rgba(248,113,113,.12);
+
+  --tinder:    #FF4458;
+  --bumble:    #FBBF24;
+  --metemi:    #4F8EF7;
+
+  --r:    20px;
+  --r-sm: 12px;
+  --r-xs: 8px;
+
+  --sh-sm:   0 2px 12px rgba(0,0,0,.3);
+  --sh-md:   0 8px 32px rgba(0,0,0,.4);
+  --sh-lg:   0 20px 60px rgba(0,0,0,.5);
+  --sh-xl:   0 40px 100px rgba(0,0,0,.6);
+  --sh-blue: 0 8px 40px rgba(79,142,247,.4);
+
+  --spring: cubic-bezier(.16,1,.3,1);
+  --ease:   cubic-bezier(.22,1,.36,1);
+}
+
+*,*::before,*::after { box-sizing:border-box; margin:0; padding:0 }
+html { scroll-behavior:smooth; -webkit-text-size-adjust:100% }
+body {
+  font-family:'DM Sans', system-ui, sans-serif;
+  background:var(--bg);
+  color:var(--t1);
+  line-height:1.6;
+  -webkit-font-smoothing:antialiased;
+  overflow-x:hidden;
+}
+img { display:block; max-width:100% }
+a { color:var(--blue); text-decoration:none }
+svg { display:block; flex-shrink:0 }
+
+/* ── Scroll reveal ── */
+.sr {
+  opacity:0; transform:translateY(32px);
+  transition:opacity .7s var(--spring), transform .7s var(--spring);
+}
+.sr.in { opacity:1; transform:none }
+.sr-left  { transform:translateX(-32px) }
+.sr-right { transform:translateX(32px) }
+.sr-left.in, .sr-right.in { transform:none }
+.sr-scale { transform:scale(.94) translateY(24px) }
+.sr-scale.in { transform:none }
+.d1{transition-delay:.07s} .d2{transition-delay:.14s} .d3{transition-delay:.21s}
+.d4{transition-delay:.28s} .d5{transition-delay:.35s}
+@media(prefers-reduced-motion:reduce){ .sr{opacity:1;transform:none;transition:none} }
+
+/* ── Layout ── */
+.wrap { max-width:1140px; margin:0 auto; padding:0 28px }
+.section { padding:108px 0 }
+@media(max-width:768px){ .section{padding:72px 0} .wrap{padding:0 18px} }
+
+/* ── Section labels ── */
+.label-row {
+  display:flex; align-items:center; justify-content:center; gap:12px;
+  margin-bottom:16px;
+}
+.label-line { width:32px; height:1px; background:var(--border2) }
+.label-text {
+  font-size:11px; font-weight:700; letter-spacing:.14em;
+  text-transform:uppercase; color:var(--t3);
+}
+.section-title {
+  font-size:clamp(28px,4vw,50px);
+  font-weight:900; letter-spacing:-.05em; line-height:1.08;
+  text-align:center; color:var(--t1);
+}
+.section-sub {
+  font-size:16.5px; color:var(--t2); max-width:520px;
+  margin:16px auto 0; text-align:center; line-height:1.78;
+}
+
+/* ── Gradient text ── */
+.gt-blue   { background:linear-gradient(120deg,var(--blue),var(--violet)); -webkit-background-clip:text; -webkit-text-fill-color:transparent; background-clip:text }
+.gt-pink   { background:linear-gradient(120deg,var(--pink),var(--violet)); -webkit-background-clip:text; -webkit-text-fill-color:transparent; background-clip:text }
+.gt-teal   { background:linear-gradient(120deg,var(--teal),var(--blue));  -webkit-background-clip:text; -webkit-text-fill-color:transparent; background-clip:text }
+.gt-amber  { background:linear-gradient(120deg,var(--amber),var(--pink)); -webkit-background-clip:text; -webkit-text-fill-color:transparent; background-clip:text }
+
+/* ══════════════════════════════════════════════
+   SCROLL PROGRESS
+══════════════════════════════════════════════ */
+.progress-bar {
+  position:fixed; top:0; left:0; z-index:500;
+  height:2px; width:0;
+  background:linear-gradient(90deg,var(--blue),var(--violet),var(--pink));
+  pointer-events:none; transition:width .1s linear;
+}
+
+/* ══════════════════════════════════════════════
+   TRUST TICKER
+══════════════════════════════════════════════ */
+.trust-bar {
+  background:linear-gradient(90deg,var(--blue-d),#1E1B4B,var(--blue-d));
+  background-size:200% 100%;
+  animation:gradShift 6s linear infinite;
+  padding:10px 0; overflow:hidden;
+}
+@keyframes gradShift{ 0%{background-position:0%} 100%{background-position:200%} }
+.trust-ticker {
+  display:flex; gap:48px; white-space:nowrap;
+  animation:tick 26s linear infinite;
+}
+.trust-bar:hover .trust-ticker { animation-play-state:paused }
+.trust-ticker-item {
+  display:flex; align-items:center; gap:8px;
+  font-size:11.5px; font-weight:600; color:rgba(255,255,255,.7);
+  letter-spacing:.08em; text-transform:uppercase;
+}
+.trust-dot {
+  width:5px; height:5px; border-radius:50%;
+  background:rgba(255,255,255,.4); flex-shrink:0;
+}
+@keyframes tick{ from{transform:translateX(0)} to{transform:translateX(-50%)} }
+
+/* ══════════════════════════════════════════════
+   NAV
+══════════════════════════════════════════════ */
+.nav {
+  position:sticky; top:0; z-index:300;
+  background:rgba(13,14,26,.7);
+  backdrop-filter:blur(24px) saturate(160%);
+  -webkit-backdrop-filter:blur(24px) saturate(160%);
+  border-bottom:1px solid var(--border);
+  transition:border-color .3s, box-shadow .3s;
+}
+.nav.scrolled {
+  border-color:var(--border2);
+  box-shadow:0 4px 32px rgba(0,0,0,.5);
+}
+.nav-inner { display:flex; align-items:center; justify-content:space-between; height:66px }
+.nav-logo {
+  font-size:16px; font-weight:900; letter-spacing:-.04em;
+  background:linear-gradient(120deg,var(--blue),var(--violet));
+  -webkit-background-clip:text; -webkit-text-fill-color:transparent; background-clip:text;
+}
+.nav-links { display:flex; gap:28px; list-style:none }
+.nav-links a {
+  font-size:13.5px; font-weight:500; color:var(--t2);
+  transition:color .2s; position:relative; padding-bottom:3px;
+}
+.nav-links a::after {
+  content:''; position:absolute; left:0; bottom:0;
+  width:0; height:1.5px;
+  background:linear-gradient(90deg,var(--blue),var(--violet));
+  border-radius:1px; transition:width .25s var(--ease);
+}
+.nav-links a:hover { color:var(--t1) }
+.nav-links a:hover::after { width:100% }
+
+.nav-cta {
+  display:inline-flex; align-items:center; gap:7px;
+  background:linear-gradient(135deg,var(--blue),var(--violet));
+  color:#fff; font-size:13px; font-weight:700;
+  padding:9px 20px; border-radius:999px;
+  box-shadow:var(--sh-blue);
+  transition:opacity .2s, transform .2s, box-shadow .2s;
+}
+.nav-cta:hover { opacity:.9; transform:translateY(-1px); box-shadow:0 12px 40px rgba(79,142,247,.5) }
+@media(max-width:720px){ .nav-links{display:none} }
+
+/* ══════════════════════════════════════════════
+   HERO
+══════════════════════════════════════════════ */
+.hero {
+  position:relative; overflow:hidden;
+  padding:90px 0 120px;
+  background:radial-gradient(ellipse 80% 60% at 60% 0%, rgba(79,142,247,.18) 0%, transparent 70%),
+             radial-gradient(ellipse 60% 50% at 10% 80%, rgba(168,85,247,.14) 0%, transparent 70%),
+             var(--bg);
+}
+
+/* animated grid */
+.hero-grid {
+  position:absolute; inset:0; pointer-events:none; z-index:0;
+  background-image:
+    linear-gradient(rgba(255,255,255,.03) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255,255,255,.03) 1px, transparent 1px);
+  background-size:52px 52px;
+  mask-image:radial-gradient(ellipse 80% 80% at 60% 20%, black 20%, transparent 80%);
+}
+
+/* floating orbs */
+.hero-orbs { position:absolute; inset:0; pointer-events:none; z-index:0 }
+.orb {
+  position:absolute; border-radius:50%;
+  filter:blur(80px); will-change:transform;
+}
+.orb-1 {
+  width:500px; height:500px; top:-160px; right:-80px;
+  background:radial-gradient(circle, rgba(79,142,247,.22), transparent 70%);
+  animation:orbFloat1 9s ease-in-out infinite;
+}
+.orb-2 {
+  width:420px; height:420px; bottom:-100px; left:-80px;
+  background:radial-gradient(circle, rgba(168,85,247,.18), transparent 70%);
+  animation:orbFloat2 11s ease-in-out infinite;
+}
+.orb-3 {
+  width:280px; height:280px; top:50%; left:42%;
+  background:radial-gradient(circle, rgba(45,212,191,.12), transparent 70%);
+  animation:orbFloat3 7s ease-in-out infinite;
+}
+.orb-4 {
+  width:200px; height:200px; top:20%; left:25%;
+  background:radial-gradient(circle, rgba(244,114,182,.1), transparent 70%);
+  animation:orbFloat2 13s ease-in-out infinite reverse;
+}
+@keyframes orbFloat1{0%,100%{transform:translate(0,0)}33%{transform:translate(-18px,14px)}66%{transform:translate(12px,-10px)}}
+@keyframes orbFloat2{0%,100%{transform:translate(0,0)}40%{transform:translate(16px,-18px)}70%{transform:translate(-10px,12px)}}
+@keyframes orbFloat3{0%,100%{transform:translate(0,0)}50%{transform:translate(-12px,-16px)}}
+
+.hero-inner {
+  position:relative; z-index:1;
+  display:grid; grid-template-columns:1fr 1fr;
+  gap:56px; align-items:center;
+}
+@media(max-width:940px){ .hero-inner{grid-template-columns:1fr; text-align:center; gap:52px} }
+
+/* eyebrow */
+.hero-eyebrow {
+  display:inline-flex; align-items:center; gap:8px;
+  font-size:12px; font-weight:600; letter-spacing:.1em;
+  text-transform:uppercase; color:var(--t3); margin-bottom:20px;
+}
+.live-dot {
+  width:7px; height:7px; border-radius:50%; background:var(--green);
+  box-shadow:0 0 0 3px rgba(52,211,153,.2);
+  animation:livePulse 2.4s ease-in-out infinite;
+}
+@keyframes livePulse{0%,100%{box-shadow:0 0 0 3px rgba(52,211,153,.2)}50%{box-shadow:0 0 0 8px rgba(52,211,153,.06)}}
+
+/* h1 */
+.hero h1 {
+  font-size:clamp(36px,5.5vw,68px);
+  font-weight:900; letter-spacing:-.055em; line-height:1.03;
+  color:var(--t1); margin-bottom:24px;
+}
+.hero h1 em { font-style:normal; position:relative; display:inline-block }
+.hero h1 em::after {
+  content:'';
+  position:absolute; left:0; bottom:-4px;
+  width:100%; height:3px;
+  background:linear-gradient(90deg,var(--blue),var(--violet));
+  border-radius:2px;
+  transform-origin:left;
+  animation:lineIn 1s var(--spring) .9s both;
+}
+@keyframes lineIn{ from{transform:scaleX(0)} to{transform:scaleX(1)} }
+
+.hero-sub {
+  font-size:17.5px; color:var(--t2); line-height:1.75;
+  max-width:480px; margin-bottom:38px;
+}
+@media(max-width:940px){ .hero-sub{margin:0 auto 38px} }
+
+/* buttons */
+.hero-btns { display:flex; align-items:center; gap:14px; flex-wrap:wrap }
+@media(max-width:940px){ .hero-btns{justify-content:center} }
+
+.btn-grad {
+  display:inline-flex; align-items:center; gap:9px;
+  background:linear-gradient(135deg, var(--blue), var(--violet));
+  color:#fff; font-size:15.5px; font-weight:700;
+  padding:16px 32px; border-radius:999px;
+  box-shadow:0 6px 28px rgba(79,142,247,.45);
+  transition:opacity .2s, transform .15s, box-shadow .2s;
+  position:relative; overflow:hidden;
+}
+.btn-grad::before {
+  content:'';
+  position:absolute; inset:0;
+  background:linear-gradient(135deg, rgba(255,255,255,.15), transparent 60%);
+}
+.btn-grad:hover { color:#fff; opacity:.92; transform:translateY(-2px); box-shadow:0 12px 40px rgba(79,142,247,.55) }
+.btn-grad svg { transition:transform .2s var(--ease) }
+.btn-grad:hover svg { transform:translateX(4px) }
+
+.btn-outline {
+  display:inline-flex; align-items:center; gap:8px;
+  color:var(--t2); font-size:14.5px; font-weight:500;
+  padding:16px 24px; border-radius:999px;
+  border:1.5px solid var(--border2);
+  transition:all .22s var(--ease);
+}
+.btn-outline:hover { border-color:var(--blue); color:var(--t1); background:var(--blue-lt) }
+
+/* trust pills */
+.hero-trust { display:flex; align-items:center; gap:18px; margin-top:28px; flex-wrap:wrap }
+@media(max-width:940px){ .hero-trust{justify-content:center} }
+.trust-pill {
+  display:flex; align-items:center; gap:6px;
+  font-size:12.5px; color:var(--t3); font-weight:500;
+}
+.trust-pill svg { color:var(--green); flex-shrink:0 }
+
+/* ═══ HERO GRAPHIC ═══ */
+.hero-visual {
+  position:relative;
+}
+@media(max-width:940px){ .hero-visual{max-width:480px; margin:0 auto} }
+
+/* Central "match" card */
+.match-scene {
+  position:relative;
+  display:flex; justify-content:center; align-items:center;
+  height:480px;
+}
+
+/* big glow behind scene */
+.scene-glow {
+  position:absolute; inset:-40px;
+  border-radius:50%;
+  background:radial-gradient(ellipse at center,
+    rgba(79,142,247,.18) 0%,
+    rgba(168,85,247,.10) 50%,
+    transparent 70%);
+  filter:blur(20px);
+  animation:sceneGlow 5s ease-in-out infinite alternate;
+}
+@keyframes sceneGlow{from{opacity:.7}to{opacity:1}}
+
+/* profile cards */
+.profile-card {
+  position:absolute;
+  width:168px;
+  background:var(--surface);
+  border:1px solid var(--border2);
+  border-radius:20px;
+  padding:18px 16px 16px;
+  display:flex; flex-direction:column; align-items:center; gap:10px;
+  box-shadow:var(--sh-lg);
+  transition:transform .3s var(--spring);
+}
+.profile-card:hover { transform:translateY(-6px) scale(1.03) }
+
+.pc-avatar {
+  width:64px; height:64px; border-radius:50%;
+  display:flex; align-items:center; justify-content:center;
+  font-size:28px;
+  border:2.5px solid transparent;
+  position:relative;
+}
+.pc-avatar::after {
+  content:''; position:absolute; inset:-3px;
+  border-radius:50%;
+  padding:2px;
+  background:linear-gradient(135deg,var(--blue),var(--violet));
+  -webkit-mask:linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite:xor; mask-composite:exclude;
+}
+
+.pc-name {
+  font-size:14px; font-weight:700; color:var(--t1); letter-spacing:-.02em;
+}
+.pc-sub { font-size:11px; color:var(--t3); font-weight:500 }
+
+.pc-badge {
+  font-size:10px; font-weight:700; letter-spacing:.05em;
+  text-transform:uppercase; padding:3px 10px; border-radius:999px;
+}
+.pc-badge-tinder { background:rgba(255,68,88,.2); color:#FF6B7A }
+.pc-badge-bumble { background:rgba(251,191,36,.2); color:#FCD34D }
+.pc-badge-metemi { background:rgba(79,142,247,.2); color:#7CB3FA }
+
+.pc-stat {
+  font-size:12px; font-weight:600; color:var(--t2);
+  display:flex; align-items:center; gap:5px;
+}
+.pc-stat svg { width:12px; height:12px; color:var(--green) }
+
+.pc-left  { left:0;  bottom:10%; animation:cardFloat1 5s ease-in-out infinite }
+.pc-right { right:0; top:8%;     animation:cardFloat2 6s ease-in-out infinite }
+@keyframes cardFloat1{0%,100%{transform:translateY(0) rotate(-2deg)}50%{transform:translateY(-10px) rotate(-1deg)}}
+@keyframes cardFloat2{0%,100%{transform:translateY(0) rotate(2deg)}50%{transform:translateY(-8px) rotate(1deg)}}
+
+/* centre heart burst */
+.heart-ring {
+  position:absolute;
+  width:130px; height:130px;
+  border-radius:50%;
+  background:linear-gradient(135deg,var(--pink) 0%,var(--violet) 100%);
+  display:flex; align-items:center; justify-content:center;
+  box-shadow:0 0 0 0 rgba(244,114,182,.4), var(--sh-md);
+  animation:heartPulse 2.6s ease-in-out infinite;
+  z-index:2;
+}
+@keyframes heartPulse{
+  0%,100%{box-shadow:0 0 0 0 rgba(244,114,182,.35), var(--sh-md)}
+  50%{box-shadow:0 0 0 20px rgba(244,114,182,.0), var(--sh-md)}
+}
+.heart-ring svg { width:56px; height:56px; color:#fff; animation:heartBeat 2.6s ease-in-out infinite }
+@keyframes heartBeat{
+  0%,100%{transform:scale(1)}
+  15%{transform:scale(1.14)}
+  30%{transform:scale(1)}
+  45%{transform:scale(1.08)}
+  60%{transform:scale(1)}
+}
+
+/* sparkles around heart */
+.sparkle {
+  position:absolute;
+  border-radius:50%;
+  animation:sparkleAnim var(--dur,3s) ease-in-out infinite var(--del,0s);
+}
+@keyframes sparkleAnim{
+  0%,100%{transform:translate(0,0) scale(1); opacity:.8}
+  50%{transform:translate(var(--tx,6px),var(--ty,-8px)) scale(1.4); opacity:1}
+}
+
+/* notification bubbles */
+.notif {
+  position:absolute;
+  background:var(--surface2);
+  border:1px solid var(--border2);
+  border-radius:14px;
+  padding:9px 13px;
+  display:flex; align-items:center; gap:8px;
+  font-size:12px; font-weight:600; color:var(--t1);
+  box-shadow:var(--sh-md);
+  white-space:nowrap;
+  z-index:3;
+}
+.notif-icon {
+  width:26px; height:26px; border-radius:8px;
+  display:flex; align-items:center; justify-content:center;
+  font-size:13px; flex-shrink:0;
+}
+.n1 { top:2%; left:50%; transform:translateX(-50%); animation:notifFloat1 4s ease-in-out infinite }
+.n2 { bottom:5%; left:50%; transform:translateX(-50%); animation:notifFloat2 5s ease-in-out infinite }
+@keyframes notifFloat1{0%,100%{transform:translateX(-50%) translateY(0)}50%{transform:translateX(-50%) translateY(-6px)}}
+@keyframes notifFloat2{0%,100%{transform:translateX(-50%) translateY(0)}50%{transform:translateX(-50%) translateY(-5px)}}
+
+/* floating app logos — big, scattered */
+.app-logo-float {
+  position:absolute; z-index:2;
+  border-radius:26px;
+  display:flex; align-items:center; justify-content:center;
+  transition:transform .3s var(--spring);
+  cursor:default;
+}
+.app-logo-float:hover { transform:scale(1.1) rotate(0deg) !important }
+
+.alf-tinder {
+  width:148px; height:148px;
+  border:none; background:transparent; overflow:hidden;
+  box-shadow:0 20px 60px rgba(254,60,114,.5), var(--sh-md);
+  border-radius:34px;
+  top:3%; left:20%;
+  animation:alfFloat1 5.2s ease-in-out infinite;
+}
+.alf-bumble {
+  width:154px; height:138px;
+  border:none; background:transparent; overflow:visible;
+  box-shadow:none;
+  filter:drop-shadow(0 16px 40px rgba(255,198,41,.55));
+  border-radius:0;
+  bottom:6%; right:18%;
+  animation:alfFloat2 6.1s ease-in-out infinite;
+}
+.alf-metemi {
+  width:144px; height:144px; padding:0; overflow:hidden;
+  border:none;
+  box-shadow:0 20px 60px rgba(79,142,247,.5), var(--sh-md);
+  border-radius:34px;
+  top:52%; left:16%;
+  animation:alfFloat3 4.7s ease-in-out infinite;
+}
+.alf-metemi img { width:100%; height:100%; object-fit:cover; display:block }
+
+@keyframes alfFloat1{0%,100%{transform:translateY(0) rotate(-5deg)}50%{transform:translateY(-14px) rotate(-2deg)}}
+@keyframes alfFloat2{0%,100%{transform:translateY(0) rotate(4deg)}50%{transform:translateY(-12px) rotate(6deg)}}
+@keyframes alfFloat3{0%,100%{transform:translateY(0) rotate(-2deg)}50%{transform:translateY(-10px) rotate(1deg)}}
+
+/* speed badge */
+.speed-badge {
+  position:absolute; right:-20px; bottom:26%;
+  background:linear-gradient(135deg,var(--green),var(--teal));
+  color:#0D0E1A; font-size:11.5px; font-weight:800;
+  padding:8px 14px; border-radius:999px;
+  display:flex; align-items:center; gap:5px;
+  box-shadow:0 4px 20px rgba(52,211,153,.45);
+  animation:badgeFloat 4s ease-in-out infinite;
+  z-index:4; white-space:nowrap;
+}
+@media(max-width:940px){ .speed-badge{right:0} }
+@keyframes badgeFloat{0%,100%{transform:translateY(0)}50%{transform:translateY(-6px)}}
+
+/* ══════════════════════════════════════════════
+   PROBLEM SECTION
+══════════════════════════════════════════════ */
+.problem { background:var(--bg2); border-top:1px solid var(--border); border-bottom:1px solid var(--border) }
+
+.problem-grid {
+  display:grid; grid-template-columns:repeat(2,1fr); gap:18px;
+  max-width:780px; margin:0 auto;
+}
+@media(max-width:480px){ .problem-grid{grid-template-columns:1fr} }
+
+.pcard {
+  padding:26px 22px;
+  border-radius:var(--r);
+  border:1.5px solid var(--border);
+  background:var(--surface);
+  transition:all .3s var(--spring);
+  cursor:default; position:relative; overflow:hidden;
+}
+.pcard::before {
+  content:''; position:absolute;
+  top:0; left:0; right:0; height:3px;
+  border-radius:var(--r) var(--r) 0 0;
+  opacity:0; transition:opacity .3s;
+}
+.pcard:hover { transform:translateY(-5px); border-color:var(--border2); box-shadow:var(--sh-md) }
+.pcard:hover::before { opacity:1 }
+
+.pcard-1::before { background:linear-gradient(90deg,var(--red),var(--pink)) }
+.pcard-2::before { background:linear-gradient(90deg,var(--amber),var(--teal)) }
+.pcard-3::before { background:linear-gradient(90deg,var(--teal),var(--blue)) }
+.pcard-4::before { background:linear-gradient(90deg,var(--blue),var(--violet)) }
+
+.pcard-icon {
+  width:48px; height:48px; border-radius:14px;
+  display:flex; align-items:center; justify-content:center;
+  margin-bottom:16px; font-size:20px;
+  transition:transform .25s var(--spring);
+}
+.pcard:hover .pcard-icon { transform:scale(1.1) rotate(-6deg) }
+.pcard h3 { font-size:14.5px; font-weight:700; letter-spacing:-.02em; margin-bottom:7px; color:var(--t1) }
+.pcard p { font-size:13px; color:var(--t2); line-height:1.72 }
+.pcard-stat {
+  margin-top:16px; padding-top:14px; border-top:1px solid var(--border);
+  font-size:13px; font-weight:500; color:var(--t3);
+}
+.pcard-stat .counter,
+.pcard-stat .stat-num {
+  display:block;
+  font-size:32px; font-weight:900; letter-spacing:-.05em; line-height:1.1;
+  margin-bottom:4px;
+}
+.pcard-stat > span:not(.counter):not(.stat-num) { font-size:11px; font-weight:500; color:var(--t3); display:block; margin-top:2px; letter-spacing:0; line-height:1.5 }
+
+/* ══════════════════════════════════════════════
+   COMPARISON TABLE
+══════════════════════════════════════════════ */
+.comparison { background:var(--bg) }
+
+.table-wrap {
+  border-radius:var(--r);
+  overflow:hidden;
+  box-shadow:var(--sh-lg);
+  border:1px solid var(--border);
+  overflow-x:auto;
+  -webkit-overflow-scrolling:touch;
+}
+.scroll-hint { display:none; text-align:center; font-size:12px; color:var(--t3); margin-bottom:10px }
+@media(max-width:640px){ .scroll-hint{display:block} }
+
+table {
+  width:100%; border-collapse:separate; border-spacing:0;
+  background:var(--surface); min-width:600px;
+}
+thead tr th { padding:28px 22px 20px }
+.th-feat {
+  text-align:left; font-size:11px; font-weight:700;
+  letter-spacing:.1em; text-transform:uppercase; color:var(--t3); width:34%;
+}
+.th-app-col { text-align:center }
+.th-app-inner { display:flex; flex-direction:column; align-items:center; gap:9px }
+.th-icon {
+  width:48px; height:48px; border-radius:14px;
+  display:flex; align-items:center; justify-content:center;
+  font-size:22px;
+  transition:transform .25s var(--spring);
+}
+th:hover .th-icon { transform:scale(1.1) rotate(-4deg) }
+.th-name { font-size:14.5px; font-weight:800; letter-spacing:-.02em }
+.th-sub { font-size:10.5px; font-weight:500; color:var(--t3); letter-spacing:.02em }
+.th-pick {
+  font-size:10px; font-weight:700; letter-spacing:.06em; text-transform:uppercase;
+  background:linear-gradient(135deg,var(--blue),var(--violet));
+  color:#fff; padding:3px 11px; border-radius:999px; margin-top:2px;
+  box-shadow:0 2px 10px rgba(79,142,247,.45);
+}
+
+.col-t-head { background:rgba(255,68,88,.06) }
+.col-b-head { background:rgba(251,191,36,.06) }
+.col-m-head {
+  background:linear-gradient(180deg,rgba(79,142,247,.14) 0%,rgba(79,142,247,.06) 100%);
+  position:relative;
+}
+.col-m-head::before {
+  content:'';
+  position:absolute; top:0; left:0; right:0; height:3px;
+  background:linear-gradient(90deg,var(--blue),var(--violet));
+  border-radius:0;
+}
+.col-m {
+  background:rgba(79,142,247,.06);
+  position:relative;
+}
+.col-m::before {
+  content:'';
+  position:absolute; left:0; top:0; bottom:0; width:2px;
+  background:linear-gradient(180deg,rgba(79,142,247,.4),rgba(124,58,237,.4));
+}
+.col-m:last-child::after {
+  content:'';
+  position:absolute; right:0; top:0; bottom:0; width:2px;
+  background:linear-gradient(180deg,rgba(79,142,247,.4),rgba(124,58,237,.4));
+}
+
+/* winner bar */
+.winner-bar {
+  background:linear-gradient(135deg, #0F1F70 0%, #1840C8 35%, #7C3AED 70%, #9D174D 100%);
+  padding:14px 0; overflow:hidden; position:relative;
+}
+.winner-bar-inner {
+  display:flex; align-items:center; justify-content:center;
+  gap:20px; flex-wrap:wrap;
+  position:relative; z-index:1;
+}
+.winner-crown {
+  display:flex; align-items:center; gap:10px;
+  font-size:16px; font-weight:900; color:#fff; letter-spacing:-.02em;
+  white-space:nowrap;
+}
+.winner-crown-icon {
+  width:30px; height:30px; border-radius:10px;
+  background:rgba(255,255,255,.2);
+  display:flex; align-items:center; justify-content:center;
+  font-size:16px; flex-shrink:0;
+  animation:crownBounce 2.5s ease-in-out infinite;
+}
+@keyframes crownBounce{0%,100%{transform:translateY(0) rotate(0)}40%{transform:translateY(-3px) rotate(-4deg)}60%{transform:translateY(-2px) rotate(4deg)}}
+.winner-divider { width:1px; height:24px; background:rgba(255,255,255,.25) }
+.winner-stats {
+  display:flex; align-items:center; gap:16px; flex-wrap:wrap;
+}
+.winner-stat {
+  display:flex; align-items:center; gap:6px;
+  font-size:12px; color:rgba(255,255,255,.8); font-weight:600;
+}
+.winner-stat svg { color:rgba(255,255,255,.6); flex-shrink:0 }
+.winner-bar-bg {
+  position:absolute; inset:0; pointer-events:none;
+  background:repeating-linear-gradient(-45deg,transparent,transparent 40px,rgba(255,255,255,.02) 40px,rgba(255,255,255,.02) 42px);
+}
+.winner-cta-link {
+  display:inline-flex; align-items:center; gap:6px;
+  background:rgba(255,255,255,.18); border:1px solid rgba(255,255,255,.3);
+  color:#fff; font-size:12px; font-weight:700; padding:5px 14px; border-radius:999px;
+  transition:background .2s, transform .15s; white-space:nowrap;
+}
+.winner-cta-link:hover { background:rgba(255,255,255,.28); color:#fff; transform:scale(1.03) }
+
+tbody tr td {
+  border-top:1px solid var(--border);
+  padding:17px 22px; text-align:center; vertical-align:middle;
+  transition:background .15s;
+}
+.td-feat {
+  text-align:left; font-size:13px; font-weight:600; color:var(--t1);
+}
+.td-feat small { display:block; font-size:11.5px; font-weight:400; color:var(--t3); margin-top:2px }
+
+.pill {
+  display:inline-flex; align-items:center; gap:5px;
+  padding:5px 12px; border-radius:999px;
+  font-size:12px; font-weight:600; white-space:nowrap;
+  transition:transform .15s;
+}
+.pill:hover { transform:scale(1.05) }
+.pill-yes  { background:rgba(52,211,153,.15);  color:var(--green) }
+.pill-no   { background:rgba(248,113,113,.15); color:var(--red) }
+.pill-part { background:rgba(251,191,36,.15);  color:var(--amber) }
+.pill-best { background:rgba(52,211,153,.15);  color:var(--green); box-shadow:inset 0 0 0 1px rgba(52,211,153,.3) }
+.pill svg { width:11px; height:11px }
+.price-wrap { display:flex; flex-direction:column; gap:4px; align-items:flex-start }
+.price-free { font-size:12px; font-weight:700; color:var(--green) }
+.price-tier { font-size:11px; font-weight:500; color:var(--t2); white-space:nowrap }
+.price-tier strong { color:var(--t1); font-weight:700 }
+
+tfoot td {
+  background:var(--bg2); padding:18px 22px;
+  border-top:2px solid var(--border);
+  font-size:12px; color:var(--t3);
+}
+.verdict-cell { text-align:center; font-weight:600 }
+
+.col-hl-t td.col-t, .col-hl-t th.col-t-head { background:rgba(255,68,88,.1)!important }
+.col-hl-b td.col-b, .col-hl-b th.col-b-head { background:rgba(251,191,36,.1)!important }
+.col-hl-m td.col-m, .col-hl-m th.col-m-head { background:rgba(79,142,247,.12)!important }
+
+/* ══════════════════════════════════════════════
+   APP REVIEWS
+══════════════════════════════════════════════ */
+.reviews { background:var(--bg2); border-top:1px solid var(--border); border-bottom:1px solid var(--border) }
+
+.reviews-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:22px }
+@media(max-width:980px){ .reviews-grid{grid-template-columns:1fr} }
+
+.rcard {
+  border-radius:var(--r);
+  border:1.5px solid var(--border);
+  padding:30px;
+  background:var(--surface);
+  transition:all .4s var(--spring);
+  position:relative; overflow:hidden; cursor:default;
+}
+.rcard::before {
+  content:''; position:absolute; top:0; left:0; right:0; height:4px;
+  border-radius:var(--r) var(--r) 0 0;
+}
+
+.winner-stamp {
+  position:absolute; top:0; left:0; z-index:2;
+  width:96px; height:96px;
+  overflow:hidden; border-radius:var(--r) 0 0 0;
+  pointer-events:none;
+}
+.winner-stamp::before {
+  content:'🏆 Vítěz';
+  position:absolute;
+  top:22px; left:-28px;
+  width:110px;
+  background:linear-gradient(135deg, var(--blue), var(--violet));
+  color:#fff;
+  font-size:10px; font-weight:800; letter-spacing:.04em; text-transform:uppercase;
+  text-align:center; padding:5px 0;
+  transform:rotate(-45deg);
+  box-shadow:0 2px 8px rgba(79,142,247,.5);
+}
+.rcard::after {
+  content:''; position:absolute; inset:0;
+  background:linear-gradient(135deg, rgba(255,255,255,.03) 0%, transparent 60%);
+  opacity:0; transition:opacity .3s; pointer-events:none;
+}
+.rc-tinder::before { background:linear-gradient(90deg,var(--tinder),#FF8096) }
+.rc-bumble::before { background:linear-gradient(90deg,var(--bumble),#FDE68A) }
+.rc-metemi::before { background:linear-gradient(90deg,var(--metemi),var(--violet)) }
+
+.rcard:hover { border-color:var(--border2); box-shadow:var(--sh-xl); transform:translateY(-7px) }
+.rcard:hover::after { opacity:1 }
+
+.rcard-header { display:flex; align-items:flex-start; justify-content:space-between; margin-bottom:18px }
+.rcard-app-info { display:flex; align-items:center; gap:13px }
+.rcard-icon {
+  width:52px; height:52px; border-radius:15px;
+  display:flex; align-items:center; justify-content:center; font-size:24px;
+  flex-shrink:0; transition:transform .25s var(--spring);
+}
+.rcard:hover .rcard-icon { transform:scale(1.08) rotate(-4deg) }
+.rcard-name { font-size:17px; font-weight:800; letter-spacing:-.03em; color:var(--t1) }
+.rcard-type { font-size:12px; color:var(--t3); font-weight:500; margin-top:2px }
+
+.stars { display:flex; gap:3px; margin:8px 0 }
+.s-full { font-size:13px; color:#FBBF24 }
+.s-empty { font-size:13px; color:rgba(255,255,255,.15) }
+
+.score { font-size:30px; font-weight:900; letter-spacing:-.05em; line-height:1; text-align:right }
+.score-lbl { font-size:11px; color:var(--t3); font-weight:500; text-align:right; margin-top:2px }
+
+.verdict-badge {
+  display:inline-block; font-size:11px; font-weight:700; letter-spacing:.06em;
+  text-transform:uppercase; padding:4px 12px; border-radius:999px; margin-bottom:14px;
+}
+.vb-neutral { background:rgba(251,191,36,.15); color:var(--amber) }
+.vb-ok      { background:rgba(52,211,153,.15); color:var(--green) }
+.vb-best    { background:rgba(79,142,247,.15);  color:var(--blue); box-shadow:inset 0 0 0 1px rgba(79,142,247,.3) }
+
+.rcard-body { font-size:13.5px; color:var(--t2); line-height:1.78; margin-bottom:18px }
+
+.rcard-points { display:flex; flex-direction:column; gap:7px; margin-bottom:18px }
+.rp { display:flex; align-items:flex-start; gap:8px; font-size:13px; line-height:1.5 }
+.rp-pro { color:var(--green) }
+.rp-con { color:var(--red) }
+.rp span { color:var(--t2) }
+
+.speed-meter { border-top:1px solid var(--border); padding-top:16px }
+.speed-lbl {
+  display:flex; justify-content:space-between;
+  font-size:12px; font-weight:600; color:var(--t2); margin-bottom:8px;
+}
+.speed-lbl span:last-child { font-weight:700; color:var(--t1) }
+.speed-track {
+  height:7px; background:rgba(255,255,255,.07); border-radius:999px; overflow:hidden;
+}
+.speed-fill {
+  height:100%; border-radius:999px; width:0;
+  transition:width 1.6s var(--spring);
+}
+.sf-tinder { background:linear-gradient(90deg,var(--tinder),#FF8096) }
+.sf-bumble { background:linear-gradient(90deg,var(--bumble),#FDE68A) }
+.sf-metemi { background:linear-gradient(90deg,var(--metemi),var(--violet)) }
+
+/* ══════════════════════════════════════════════
+   FEATURES SECTION  (coloured cards)
+══════════════════════════════════════════════ */
+.features { background:var(--bg); border-top:1px solid var(--border) }
+
+.feat-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:18px; margin-top:52px }
+@media(max-width:780px){ .feat-grid{grid-template-columns:1fr} }
+
+.fcard {
+  padding:28px;
+  border-radius:var(--r);
+  border:1.5px solid var(--border);
+  background:var(--surface);
+  transition:all .35s var(--spring);
+  position:relative; overflow:hidden; cursor:default;
+}
+.fcard::before {
+  content:'';
+  position:absolute; inset:0;
+  opacity:0; transition:opacity .35s;
+  border-radius:inherit;
+}
+.fcard:hover { border-color:var(--border2); box-shadow:var(--sh-md); transform:translateY(-5px) }
+.fcard:hover::before { opacity:1 }
+
+.fc-1::before  { background:linear-gradient(135deg, rgba(79,142,247,.07), transparent 60%) }
+.fc-2::before  { background:linear-gradient(135deg, rgba(168,85,247,.07), transparent 60%) }
+.fc-3::before  { background:linear-gradient(135deg, rgba(52,211,153,.07), transparent 60%) }
+.fc-4::before  { background:linear-gradient(135deg, rgba(244,114,182,.07), transparent 60%) }
+.fc-5::before  { background:linear-gradient(135deg, rgba(45,212,191,.07), transparent 60%) }
+.fc-6::before  { background:linear-gradient(135deg, rgba(251,191,36,.07), transparent 60%) }
+
+.fcard-glow {
+  position:absolute; width:120px; height:120px;
+  border-radius:50%; opacity:0; filter:blur(40px);
+  top:-20px; right:-20px; pointer-events:none;
+  transition:opacity .4s;
+}
+.fcard:hover .fcard-glow { opacity:.3 }
+
+.fcard-icon {
+  width:52px; height:52px; border-radius:14px;
+  display:flex; align-items:center; justify-content:center;
+  margin-bottom:16px; font-size:22px;
+  transition:transform .25s var(--spring);
+}
+.fcard:hover .fcard-icon { transform:scale(1.1) rotate(-5deg) }
+
+.fcard h3 { font-size:15px; font-weight:700; letter-spacing:-.025em; margin-bottom:8px; color:var(--t1) }
+.fcard p { font-size:13.5px; color:var(--t2); line-height:1.72 }
+
+/* ══════════════════════════════════════════════
+   SWITCHING SECTION
+══════════════════════════════════════════════ */
+.switching { background:var(--bg2); border-top:1px solid var(--border); border-bottom:1px solid var(--border) }
+.switching-inner { display:grid; grid-template-columns:1fr 1.15fr; gap:72px; align-items:center }
+@media(max-width:900px){ .switching-inner{grid-template-columns:1fr; gap:44px} }
+
+.swcol h2 { font-size:clamp(24px,3.5vw,40px); font-weight:800; letter-spacing:-.04em; line-height:1.12; margin-bottom:14px; color:var(--t1) }
+.swcol p { font-size:15px; color:var(--t2); line-height:1.8; margin-bottom:26px }
+
+.avatars-row { display:flex; align-items:center }
+.av {
+  width:40px; height:40px; border-radius:50%;
+  border:2.5px solid var(--surface2);
+  overflow:hidden; margin-left:-10px;
+  transition:transform .2s; z-index:1;
+}
+.av:first-child { margin-left:0 }
+.av:hover { transform:scale(1.15); z-index:10 }
+.av img { width:100%; height:100%; object-fit:cover }
+.av-proof { font-size:12.5px; color:var(--t3); font-weight:500; margin-left:14px }
+.av-proof strong { color:var(--t1) }
+
+.sw-list { display:flex; flex-direction:column; gap:13px }
+.sw-item {
+  display:flex; align-items:flex-start; gap:15px;
+  padding:19px; background:var(--surface);
+  border-radius:var(--r-sm);
+  border:1.5px solid var(--border);
+  transition:all .25s var(--ease); cursor:default;
+}
+.sw-item:hover { border-color:var(--border2); box-shadow:var(--sh-sm); transform:translateX(6px) }
+.sw-icon {
+  width:40px; height:40px; border-radius:12px;
+  background:var(--blue-lt); flex-shrink:0;
+  display:flex; align-items:center; justify-content:center;
+  color:var(--blue);
+  transition:transform .25s var(--spring), background .2s, color .2s;
+}
+.sw-item:hover .sw-icon { background:var(--blue); color:#fff; transform:rotate(-8deg) scale(1.08) }
+.sw-icon svg { width:20px; height:20px }
+.sw-text strong { display:block; font-size:13.5px; font-weight:700; color:var(--t1); margin-bottom:3px }
+.sw-text span { font-size:13px; color:var(--t2); line-height:1.55 }
+
+/* ══════════════════════════════════════════════
+   CTA SECTION
+══════════════════════════════════════════════ */
+.cta-section { padding:108px 0 }
+
+.cta-card {
+  border-radius:28px; padding:90px 64px; text-align:center;
+  background:linear-gradient(140deg, #0C1C6E 0%, #1840C8 28%, #7C3AED 60%, #C026D3 85%, #831843 100%);
+  position:relative; overflow:hidden;
+}
+@media(max-width:640px){ .cta-card{padding:60px 24px} }
+
+.cta-orb { position:absolute; border-radius:50%; pointer-events:none }
+.co1 { width:500px; height:500px; top:-200px; right:-120px; background:radial-gradient(circle,rgba(255,255,255,.08),transparent 70%); animation:co1 7s ease-in-out infinite }
+.co2 { width:380px; height:380px; bottom:-130px; left:-70px; background:radial-gradient(circle,rgba(192,38,211,.25),transparent 70%); animation:co2 9s ease-in-out infinite }
+.co3 { width:220px; height:220px; top:40%; left:44%; background:radial-gradient(circle,rgba(255,255,255,.05),transparent 70%) }
+@keyframes co1{0%,100%{transform:translate(0,0) scale(1)}50%{transform:translate(-22px,16px) scale(1.07)}}
+@keyframes co2{0%,100%{transform:translate(0,0) scale(1)}50%{transform:translate(18px,-14px) scale(1.05)}}
+
+.cta-shimmer {
+  position:absolute; inset:0; pointer-events:none;
+  background:repeating-linear-gradient(-45deg,transparent,transparent 60px,rgba(255,255,255,.015) 60px,rgba(255,255,255,.015) 62px);
+}
+
+.cta-inner { position:relative; z-index:1 }
+.cta-eyebrow {
+  display:inline-flex; align-items:center; gap:7px;
+  background:rgba(255,255,255,.12); backdrop-filter:blur(8px);
+  color:rgba(255,255,255,.85); font-size:11px; font-weight:600;
+  letter-spacing:.07em; text-transform:uppercase;
+  padding:7px 14px; border-radius:999px; margin-bottom:24px;
+  border:1px solid rgba(255,255,255,.15);
+  max-width:min(340px, 90vw);
+  white-space:nowrap; overflow:hidden;
+}
+@media(max-width:480px){
+  .cta-eyebrow {
+    font-size:10px; padding:6px 12px; gap:6px; letter-spacing:.05em;
+    white-space:normal; text-align:center; line-height:1.5;
+    justify-content:center;
+  }
+  .cta-eyebrow svg { display:none }
+}
+.cta-card h2 {
+  font-size:clamp(30px,4.5vw,56px); font-weight:900;
+  letter-spacing:-.055em; color:#fff; line-height:1.05; margin-bottom:18px;
+}
+.cta-card > .cta-inner > p {
+  font-size:17.5px; color:rgba(255,255,255,.72);
+  max-width:460px; margin:0 auto 44px; line-height:1.72;
+}
+.btn-cta-white {
+  display:inline-flex; align-items:center; gap:9px;
+  background:#fff; color:#1840C8;
+  font-size:15.5px; font-weight:800;
+  padding:18px 42px; border-radius:999px;
+  box-shadow:0 12px 48px rgba(0,0,0,.3);
+  transition:all .25s var(--ease);
+  letter-spacing:-.01em; position:relative; overflow:hidden;
+}
+.btn-cta-white::before {
+  content:''; position:absolute; inset:0;
+  background:linear-gradient(135deg,rgba(79,142,247,.08),transparent);
+}
+.btn-cta-white:hover { transform:translateY(-3px); box-shadow:0 18px 60px rgba(0,0,0,.36); color:#1840C8 }
+.btn-cta-white svg { transition:transform .2s var(--ease) }
+.btn-cta-white:hover svg { transform:translateX(4px) }
+
+.cta-note { margin-top:24px; font-size:12.5px; color:rgba(255,255,255,.3) }
+.cta-note a { color:rgba(255,255,255,.45); text-decoration:underline }
+
+/* ══════════════════════════════════════════════
+   FOOTER
+══════════════════════════════════════════════ */
+footer { border-top:1px solid var(--border); padding:38px 0; background:var(--bg) }
+.footer-inner { display:flex; align-items:center; justify-content:space-between; flex-wrap:wrap; gap:16px }
+.footer-logo {
+  font-size:15px; font-weight:900; letter-spacing:-.04em;
+  background:linear-gradient(120deg,var(--blue),var(--violet));
+  -webkit-background-clip:text; -webkit-text-fill-color:transparent; background-clip:text;
+}
+footer p { font-size:13px; color:var(--t3); line-height:1.7 }
+footer a { color:var(--t3); text-decoration:underline }
+footer a:hover { color:var(--blue) }
+
+/* ══════════════════════════════════════════════
+   SCROLL PROGRESS
+══════════════════════════════════════════════ */
+
+/* ══════════════════════════════════════════════
+   SECTION BACKGROUND ANIMATIONS
+══════════════════════════════════════════════ */
+
+/* particle canvas overlay */
+#particleCanvas {
+  position:fixed; inset:0; z-index:0;
+  pointer-events:none;
+  mix-blend-mode:screen;
+  opacity:1;
+}
+
+/* shared section orb system */
+.sec-bg {
+  position:absolute; inset:0; overflow:hidden;
+  pointer-events:none; z-index:0;
+}
+.sec-bg + * { position:relative; z-index:1 }
+.sec-orb {
+  position:absolute; border-radius:50%;
+  filter:blur(80px); will-change:transform;
+}
+
+/* animated grid overlay (reusable) */
+.sec-grid {
+  position:absolute; inset:0; pointer-events:none;
+  background-image:
+    linear-gradient(rgba(255,255,255,.025) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255,255,255,.025) 1px, transparent 1px);
+  background-size:48px 48px;
+}
+
+/* diagonal lines overlay */
+.sec-lines {
+  position:absolute; inset:0; pointer-events:none;
+  background:repeating-linear-gradient(
+    -55deg, transparent, transparent 44px,
+    rgba(255,255,255,.018) 44px, rgba(255,255,255,.018) 46px
+  );
+}
+
+/* dot grid overlay */
+.sec-dots {
+  position:absolute; inset:0; pointer-events:none;
+  background-image:radial-gradient(circle, rgba(255,255,255,.08) 1px, transparent 1px);
+  background-size:28px 28px;
+  mask-image:radial-gradient(ellipse 80% 80% at 50% 50%, black 40%, transparent 100%);
+}
+
+/* per-section orb animations */
+@keyframes o1 { 0%,100%{transform:translate(0,0) scale(1)} 33%{transform:translate(-22px,18px) scale(1.06)} 66%{transform:translate(16px,-12px) scale(.96)} }
+@keyframes o2 { 0%,100%{transform:translate(0,0) scale(1)} 40%{transform:translate(20px,-22px) scale(1.08)} 70%{transform:translate(-14px,14px) scale(.95)} }
+@keyframes o3 { 0%,100%{transform:translate(0,0)} 50%{transform:translate(-10px,-18px)} }
+@keyframes o4 { 0%,100%{transform:translate(0,0) scale(1)} 45%{transform:translate(18px,16px) scale(1.05)} }
+
+/* floating rings */
+.float-ring {
+  position:absolute; border-radius:50%;
+  border:1px solid rgba(255,255,255,.06);
+  pointer-events:none;
+  animation:ringPulse var(--dur,8s) ease-in-out infinite var(--del,0s);
+}
+@keyframes ringPulse {
+  0%,100%{transform:scale(1);opacity:.6}
+  50%{transform:scale(1.08);opacity:1}
+}
+</style>
+</head>
+<body>
+
+
+<canvas id="particleCanvas" aria-hidden="true"></canvas>
+<div class="progress-bar" id="progressBar" aria-hidden="true"></div>
+
+<!-- ══ TICKER ═══════════════════════════════════════════════════════ -->
+<div class="trust-bar" aria-hidden="true">
+  <div class="trust-ticker">
+    <span class="trust-ticker-item"><span class="trust-dot"></span>Independent Review</span>
+    <span class="trust-ticker-item"><span class="trust-dot"></span>No Sponsored Rankings</span>
+    <span class="trust-ticker-item"><span class="trust-dot"></span>Tested April 2026</span>
+    <span class="trust-ticker-item"><span class="trust-dot"></span>3 Apps Compared</span>
+    <span class="trust-ticker-item"><span class="trust-dot"></span>7 Criteria Evaluated</span>
+    <span class="trust-ticker-item"><span class="trust-dot"></span>Focus: Real-Life Meetings</span>
+    <span class="trust-ticker-item"><span class="trust-dot"></span>2,400+ User Reports</span>
+    <span class="trust-ticker-item"><span class="trust-dot"></span>Independent Review</span>
+    <span class="trust-ticker-item"><span class="trust-dot"></span>No Sponsored Rankings</span>
+    <span class="trust-ticker-item"><span class="trust-dot"></span>Tested April 2026</span>
+    <span class="trust-ticker-item"><span class="trust-dot"></span>3 Apps Compared</span>
+    <span class="trust-ticker-item"><span class="trust-dot"></span>7 Criteria Evaluated</span>
+    <span class="trust-ticker-item"><span class="trust-dot"></span>Focus: Real-Life Meetings</span>
+    <span class="trust-ticker-item"><span class="trust-dot"></span>2,400+ User Reports</span>
+  </div>
+</div>
+
+<!-- ══ NAV ══════════════════════════════════════════════════════════ -->
+<nav class="nav" id="nav">
+  <div class="wrap nav-inner">
+    <a href="#" class="nav-logo">AppReview.io</a>
+    <ul class="nav-links">
+      <li><a href="#problem">The Problem</a></li>
+      <li><a href="#comparison">Comparison</a></li>
+      <li><a href="#reviews">Reviews</a></li>
+      <li><a href="#switching">Insights</a></li>
+    </ul>
+    <a href="#cta" class="nav-cta">
+      <svg width="13" height="13" viewBox="0 0 13 13" fill="none" aria-hidden="true"><circle cx="6.5" cy="6.5" r="5.5" stroke="currentColor" stroke-width="1.4"/><path d="M6.5 4v2.5l1.8 1.2" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/></svg>
+      Vyzkoušet vítěze testu
+    </a>
+  </div>
+</nav>
+
+<!-- ══ HERO ══════════════════════════════════════════════════════════ -->
+<section class="hero" id="hero">
+  <div class="hero-grid" aria-hidden="true"></div>
+  <div class="hero-orbs" aria-hidden="true">
+    <div class="orb orb-1"></div>
+    <div class="orb orb-2"></div>
+    <div class="orb orb-3"></div>
+    <div class="orb orb-4"></div>
+  </div>
+
+  <div class="wrap">
+    <div class="hero-inner">
+
+      <!-- Copy -->
+      <div class="hero-copy">
+        <p class="hero-eyebrow sr"><span class="live-dot" aria-hidden="true"></span>Nezávislý test — April 2026 &nbsp;·&nbsp; <span style="color:var(--blue);font-weight:700">🏆 Vítěz: Metemi</span></p>
+        <h1 class="sr d1">
+          Which dating app<br>
+          actually gets you<br>
+          <em>out on a date?</em>
+        </h1>
+        <p class="hero-sub sr d2">We compared the most popular dating apps on the only metric that actually matters: how fast they get you from screen to real‑life coffee.</p>
+        <div class="hero-btns sr d3">
+          <a href="#comparison" class="btn-grad">
+            See the comparison
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M3 8h10M9 5l3 3-3 3" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </a>
+          <a href="#reviews" class="btn-outline">Read full reviews</a>
+        </div>
+        <div class="hero-trust sr d4">
+          <div class="trust-pill">
+            <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true"><circle cx="7" cy="7" r="6" stroke="currentColor" stroke-width="1.4"/><path d="M4.5 7l2 2 3-3" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            No paid placements
+          </div>
+          <div class="trust-pill">
+            <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true"><circle cx="7" cy="7" r="6" stroke="currentColor" stroke-width="1.4"/><path d="M4.5 7l2 2 3-3" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            3 apps tested
+          </div>
+          <div class="trust-pill">
+            <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true"><circle cx="7" cy="7" r="6" stroke="currentColor" stroke-width="1.4"/><path d="M4.5 7l2 2 3-3" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            Real user data
+          </div>
+        </div>
+      </div>
+
+      <!-- Visual -->
+      <div class="hero-visual sr sr-right d2">
+        <div class="match-scene">
+          <div class="scene-glow" aria-hidden="true"></div>
+
+          <!-- Left profile card: Tinder user -->
+          <div class="profile-card pc-left">
+            <div class="pc-avatar" style="background:rgba(255,68,88,.15)">🧑‍🦱</div>
+            <div class="pc-name">Alex, 26</div>
+            <div class="pc-sub">On Tinder</div>
+            <div class="pc-badge pc-badge-tinder">🔥 Swiping</div>
+            <div class="pc-stat">
+              <svg viewBox="0 0 12 12" fill="none" aria-hidden="true"><circle cx="6" cy="6" r="5" stroke="currentColor" stroke-width="1.3"/><path d="M6 3.5v2.5l1.5 1" stroke="currentColor" stroke-width="1.3" stroke-linecap="round"/></svg>
+              3 weeks waiting
+            </div>
+          </div>
+
+          <!-- Right profile card: Metemi user -->
+          <div class="profile-card pc-right">
+            <div class="pc-avatar" style="background:rgba(79,142,247,.15)">👩‍🦰</div>
+            <div class="pc-name">Sara, 24</div>
+            <div class="pc-sub">On Metemi</div>
+            <div class="pc-badge pc-badge-metemi" style="display:flex;align-items:center;gap:4px"><img src="metemi_logo.svg" alt="" width="12" height="12" style="border-radius:3px"/> Live now</div>
+            <div class="pc-stat">
+              <svg viewBox="0 0 12 12" fill="none" aria-hidden="true"><circle cx="6" cy="6" r="5" stroke="currentColor" stroke-width="1.3"/><path d="M6 3.5v2.5l1.5 1" stroke="currentColor" stroke-width="1.3" stroke-linecap="round"/></svg>
+              0.4 km away
+            </div>
+          </div>
+
+          <!-- Sparkle dots -->
+          <div class="sparkle" style="width:8px;height:8px;background:var(--blue);top:22%;left:30%;--dur:3.2s;--del:0s;--tx:-6px;--ty:-10px" aria-hidden="true"></div>
+          <div class="sparkle" style="width:6px;height:6px;background:var(--pink);top:25%;right:28%;--dur:2.8s;--del:.5s;--tx:8px;--ty:-8px" aria-hidden="true"></div>
+          <div class="sparkle" style="width:10px;height:10px;background:var(--amber);bottom:30%;left:22%;--dur:3.5s;--del:.3s;--tx:-8px;--ty:10px" aria-hidden="true"></div>
+          <div class="sparkle" style="width:6px;height:6px;background:var(--teal);bottom:28%;right:22%;--dur:4s;--del:.8s;--tx:6px;--ty:8px" aria-hidden="true"></div>
+          <div class="sparkle" style="width:4px;height:4px;background:var(--violet);top:40%;left:15%;--dur:2.5s;--del:1s;--tx:-4px;--ty:-6px" aria-hidden="true"></div>
+
+          <!-- Heart burst -->
+          <div class="heart-ring">
+            <svg viewBox="0 0 56 56" fill="none" aria-hidden="true">
+              <path d="M28 46C28 46 8 33.5 8 20.5C8 14.2 13.2 9 19.5 9C23.2 9 26.5 10.8 28 13.5C29.5 10.8 32.8 9 36.5 9C42.8 9 48 14.2 48 20.5C48 33.5 28 46 28 46Z" fill="white" opacity=".95"/>
+            </svg>
+          </div>
+
+          <!-- App logos — big, scattered, real brand logos -->
+          <div class="app-logo-float alf-tinder" title="Tinder" aria-hidden="true">
+            <img src="Tinder.svg" alt="Tinder" style="width:100%;height:100%;display:block;object-fit:cover"/>
+          </div>
+          <div class="app-logo-float alf-bumble" title="Bumble" aria-hidden="true">
+            <img src="bumble.svg" alt="Bumble" style="width:100%;height:100%;display:block;object-fit:contain"/>
+          </div>
+          <div class="app-logo-float alf-metemi" title="Metemi" aria-hidden="true"><img src="metemi_logo.svg" alt="Metemi"/></div>
+
+          <!-- Notification 1: top -->
+          <div class="notif n1">
+            <div class="notif-icon" style="background:rgba(52,211,153,.15)">✅</div>
+            <span>Match nearby — <strong style="color:var(--green)">now</strong></span>
+          </div>
+
+          <!-- Notification 2: bottom -->
+          <div class="notif n2">
+            <div class="notif-icon" style="background:rgba(251,191,36,.15)">☕</div>
+            <span>Coffee in <strong style="color:var(--amber)">~2 hrs</strong></span>
+          </div>
+
+          <!-- Speed badge -->
+          <div class="speed-badge" aria-hidden="true">
+            <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M7 2a5 5 0 100 10A5 5 0 007 2zm0 2v3l2 1.5" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/></svg>
+            2× faster to IRL
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ══ WINNER BAR ═════════════════════════════════════════════════════ -->
+<div class="winner-bar" role="banner" aria-label="Test winner announcement">
+  <div class="winner-bar-bg" aria-hidden="true"></div>
+  <div class="wrap winner-bar-inner">
+    <div class="winner-crown">
+      <div class="winner-crown-icon" aria-hidden="true">🏆</div>
+      <span>Vítěz testu 2026 — <strong>Metemi</strong></span>
+    </div>
+    <div class="winner-divider" aria-hidden="true"></div>
+    <div class="winner-stats">
+      <div class="winner-stat">
+        <svg width="13" height="13" viewBox="0 0 13 13" fill="none" aria-hidden="true"><circle cx="6.5" cy="6.5" r="5.5" stroke="currentColor" stroke-width="1.3"/><path d="M6.5 4v2.5l1.8 1.2" stroke="currentColor" stroke-width="1.3" stroke-linecap="round"/></svg>
+        Nejrychleji k schůzce
+      </div>
+      <div class="winner-stat">
+        <svg width="13" height="13" viewBox="0 0 13 13" fill="none" aria-hidden="true"><path d="M6.5 1.5l1.5 3 3.3.5-2.4 2.3.56 3.3L6.5 9.2l-2.96 1.4.56-3.3L1.7 5l3.3-.5L6.5 1.5z" stroke="currentColor" stroke-width="1.3" stroke-linejoin="round"/></svg>
+        Skóre 5.0 / 5.0
+      </div>
+      <div class="winner-stat">
+        <svg width="13" height="13" viewBox="0 0 13 13" fill="none" aria-hidden="true"><circle cx="6.5" cy="6.5" r="5.5" stroke="currentColor" stroke-width="1.3"/><path d="M4 6.5l2 2 3.5-3.5" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        7 z 7 kategorií
+      </div>
+      <div class="winner-stat">
+        <svg width="13" height="13" viewBox="0 0 13 13" fill="none" aria-hidden="true"><path d="M6.5 1.5C4.5 1.5 3 3 3 5c0 3.5 3.5 6.5 3.5 6.5S10 8.5 10 5c0-2-1.5-3.5-3.5-3.5z" stroke="currentColor" stroke-width="1.3" stroke-linejoin="round"/></svg>
+        Nejlepší soukromí
+      </div>
+    </div>
+    <div class="winner-divider" aria-hidden="true"></div>
+    <a href="#cta" class="winner-cta-link">
+      Vyzkoušet Metemi
+      <svg width="12" height="12" viewBox="0 0 12 12" fill="none" aria-hidden="true"><path d="M2.5 6h7M6.5 3.5L9 6l-2.5 2.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    </a>
+  </div>
+</div>
+
+<!-- ══ COMPARISON TABLE ════════════════════════════════════════════════ -->
+<section class="comparison section" id="comparison" style="position:relative">
+  <div class="sec-bg" aria-hidden="true">
+    <div class="sec-grid"></div>
+    <div class="sec-orb" style="width:500px;height:500px;top:-120px;left:-100px;background:radial-gradient(circle,rgba(79,142,247,.1),transparent 70%);animation:o2 11s ease-in-out infinite"></div>
+    <div class="sec-orb" style="width:380px;height:380px;bottom:-80px;right:-60px;background:radial-gradient(circle,rgba(168,85,247,.09),transparent 70%);animation:o1 9s ease-in-out infinite"></div>
+    <div class="sec-orb" style="width:250px;height:250px;top:50%;left:50%;background:radial-gradient(circle,rgba(45,212,191,.06),transparent 70%);animation:o3 13s ease-in-out infinite"></div>
+    <div class="float-ring" style="width:400px;height:400px;top:5%;right:10%;--dur:11s"></div>
+    <div class="float-ring" style="width:200px;height:200px;bottom:10%;left:30%;--dur:8s;--del:3s"></div>
+  </div>
+  <div class="wrap">
+    <div class="sr" style="margin-bottom:52px">
+      <div class="label-row"><div class="label-line"></div><span class="label-text">Side-by-Side Comparison</span><div class="label-line"></div></div>
+      <h2 class="section-title">Tinder vs Bumble vs <span class="gt-blue">Metemi</span></h2>
+      <p class="section-sub">Evaluated on criteria that directly affect your chances of going from profile to real‑life meeting — not vanity metrics.</p>
+    </div>
+    <p class="scroll-hint" aria-live="polite">← Scroll to see full table →</p>
+    <div class="table-wrap sr d1" id="tableContainer">
+      <table id="compTable">
+        <thead>
+          <tr>
+            <th class="th-feat" scope="col">Criteria</th>
+            <th class="col-m-head" id="col-metemi" scope="col">
+              <div class="th-app-inner">
+                <div class="th-icon" style="background:transparent;padding:0;overflow:hidden"><img src="metemi_logo.svg" alt="Metemi" width="48" height="48" style="display:block;border-radius:14px"/></div>
+                <div class="th-name gt-blue">Metemi</div>
+                <div class="th-sub">Real-time, real people</div>
+                <div class="th-pick">🏆 Vítěz testu</div>
+              </div>
+            </th>
+            <th class="col-t-head" id="col-tinder" scope="col">
+              <div class="th-app-inner">
+                <div class="th-icon" style="background:transparent;padding:0;overflow:hidden"><img src="Tinder.svg" alt="Tinder" width="48" height="48" style="display:block;border-radius:14px"/></div>
+                <div class="th-name" style="color:var(--tinder)">Tinder</div>
+                <div class="th-sub">World's largest dating app</div>
+              </div>
+            </th>
+            <th class="col-b-head" id="col-bumble" scope="col">
+              <div class="th-app-inner">
+                <div class="th-icon" style="background:transparent;padding:0;overflow:visible;border-radius:0"><img src="bumble.svg" alt="Bumble" width="54" height="48" style="display:block;object-fit:contain"/></div>
+                <div class="th-name" style="color:var(--bumble)">Bumble</div>
+                <div class="th-sub">Women message first</div>
+              </div>
+            </th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="td-feat">Real-time people nearby<small>Shows who's available right now, near you</small></td>
+            <td class="col-m"><span class="pill pill-best"><svg viewBox="0 0 11 11" fill="none" aria-hidden="true"><path d="M2 5.5L4.5 8 9 3" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>Yes — live</span></td>
+            <td class="col-t"><span class="pill pill-no"><svg viewBox="0 0 11 11" fill="none" aria-hidden="true"><path d="M2 2l7 7M9 2L2 9" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>No</span></td>
+            <td class="col-b"><span class="pill pill-no"><svg viewBox="0 0 11 11" fill="none" aria-hidden="true"><path d="M2 2l7 7M9 2L2 9" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>No</span></td>
+          </tr>
+          <tr>
+            <td class="td-feat">Swiping required<small>Mandatory swipe mechanic to access matches</small></td>
+            <td class="col-m"><span class="pill pill-best"><svg viewBox="0 0 11 11" fill="none" aria-hidden="true"><path d="M2 5.5L4.5 8 9 3" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>None</span></td>
+            <td class="col-t"><span class="pill pill-no"><svg viewBox="0 0 11 11" fill="none" aria-hidden="true"><path d="M2 2l7 7M9 2L2 9" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>Required</span></td>
+            <td class="col-b"><span class="pill pill-no"><svg viewBox="0 0 11 11" fill="none" aria-hidden="true"><path d="M2 2l7 7M9 2L2 9" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>Required</span></td>
+          </tr>
+          <tr>
+            <td class="td-feat">Algorithm transparency<small>You understand why you see who you see</small></td>
+            <td class="col-m"><span class="pill pill-best"><svg viewBox="0 0 11 11" fill="none" aria-hidden="true"><path d="M2 5.5L4.5 8 9 3" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>Full control</span></td>
+            <td class="col-t"><span class="pill pill-no"><svg viewBox="0 0 11 11" fill="none" aria-hidden="true"><path d="M2 2l7 7M9 2L2 9" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>Black box</span></td>
+            <td class="col-b"><span class="pill pill-part">Partial</span></td>
+          </tr>
+          <tr>
+            <td class="td-feat">Conversation starters<small>Built-in tools to reduce first-message anxiety</small></td>
+            <td class="col-m"><span class="pill pill-best"><svg viewBox="0 0 11 11" fill="none" aria-hidden="true"><path d="M2 5.5L4.5 8 9 3" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>"Open Phrases"</span></td>
+            <td class="col-t"><span class="pill pill-part">Optional prompts</span></td>
+            <td class="col-b"><span class="pill pill-part">Optional prompts</span></td>
+          </tr>
+          <tr>
+            <td class="td-feat">Meeting formats<small>Support for different types of first encounters</small></td>
+            <td class="col-m"><span class="pill pill-best"><svg viewBox="0 0 11 11" fill="none" aria-hidden="true"><path d="M2 5.5L4.5 8 9 3" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>1-on-1 &amp; Group</span></td>
+            <td class="col-t"><span class="pill pill-no">1-on-1 only</span></td>
+            <td class="col-b"><span class="pill pill-no">1-on-1 only</span></td>
+          </tr>
+          <tr>
+            <td class="td-feat">Location privacy<small>How much of your location is exposed to others</small></td>
+            <td class="col-m"><span class="pill pill-best"><svg viewBox="0 0 11 11" fill="none" aria-hidden="true"><path d="M2 5.5L4.5 8 9 3" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>Distance only</span></td>
+            <td class="col-t"><span class="pill pill-part">Approx. zone</span></td>
+            <td class="col-b"><span class="pill pill-part">Approx. zone</span></td>
+          </tr>
+          <tr>
+            <td class="td-feat">Time to real-life meeting<small>Realistic average from app open to actual meetup</small></td>
+            <td class="col-m"><span class="pill pill-best"><svg viewBox="0 0 11 11" fill="none" aria-hidden="true"><path d="M2 5.5L4.5 8 9 3" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>Hours–days</span></td>
+            <td class="col-t"><span class="pill pill-no"><svg viewBox="0 0 11 11" fill="none" aria-hidden="true"><path d="M2 2l7 7M9 2L2 9" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>Weeks–months</span></td>
+            <td class="col-b"><span class="pill pill-part">Days–weeks</span></td>
+          </tr>
+          <tr>
+            <td class="td-feat">Cena<small>Základní verze zdarma + prémiové tariffy</small></td>
+            <td class="col-m">
+              <div class="price-wrap">
+                <span class="price-free">✓ Zdarma</span>
+                <span class="price-tier"><strong>Plus</strong> — 9,99 €/měs</span>
+              </div>
+            </td>
+            <td class="col-t">
+              <div class="price-wrap">
+                <span class="price-free">✓ Zdarma</span>
+                <span class="price-tier"><strong>Gold</strong> — 14,99 €/měs</span>
+                <span class="price-tier"><strong>Platinum</strong> — 24,99 €/měs</span>
+              </div>
+            </td>
+            <td class="col-b">
+              <div class="price-wrap">
+                <span class="price-free">✓ Zdarma</span>
+                <span class="price-tier"><strong>Boost</strong> — 19,99 €/měs</span>
+                <span class="price-tier"><strong>Premium</strong> — 29,99 €/měs</span>
+              </div>
+            </td>
+          </tr>
+        </tbody>
+        <tfoot>
+          <tr>
+            <td style="text-align:left;font-size:12px;color:var(--t3)">Based on publicly available feature sets and aggregated user reports. Updated April 2026.</td>
+            <td class="verdict-cell col-m" style="color:var(--blue);font-weight:700">🏆 Vítěz — architektonicky navržen pro reálné setkání.</td>
+            <td class="verdict-cell" style="color:var(--t2)">Velká uživatelská základna — ale optimalizován pro engagement.</td>
+            <td class="verdict-cell" style="color:var(--t2)">Záměrnější než Tinder — stále závislý na swipování.</td>
+          </tr>
+        </tfoot>
+      </table>
+    </div>
+
+    <!-- ── Second table: extended competition ── -->
+    <div class="sr d2" style="margin-top:52px">
+      <div class="label-row" style="margin-bottom:12px">
+        <div class="label-line"></div>
+        <span class="label-text">Rozšířené srovnání — další konkurenti</span>
+        <div class="label-line"></div>
+      </div>
+      <p class="section-sub" style="margin-bottom:24px;font-size:14.5px">Metemi vs. dalších 5 populárních aplikací na 4 klíčových metrikách.</p>
+    </div>
+    <p class="scroll-hint" aria-live="polite">← Scroll to see full table →</p>
+    <div class="table-wrap sr d3" id="tableContainer2">
+      <table id="compTable2">
+        <thead>
+          <tr>
+            <th class="th-feat" scope="col" style="width:22%">Aplikace</th>
+            <th scope="col" style="background:rgba(236,72,153,.06)">
+              <div class="th-app-inner">
+                <div class="th-icon" style="background:rgba(236,72,153,.15)">💜</div>
+                <div class="th-name" style="color:#EC4899">Hinge</div>
+                <div class="th-sub">Designed to be deleted</div>
+              </div>
+            </th>
+            <th scope="col" style="background:rgba(234,88,12,.06)">
+              <div class="th-app-inner">
+                <div class="th-icon" style="background:rgba(234,88,12,.15)">🍊</div>
+                <div class="th-name" style="color:#EA580C">OkCupid</div>
+                <div class="th-sub">Match on what matters</div>
+              </div>
+            </th>
+            <th scope="col" style="background:rgba(16,185,129,.06)">
+              <div class="th-app-inner">
+                <div class="th-icon" style="background:rgba(16,185,129,.15)">💚</div>
+                <div class="th-name" style="color:#10B981">Happn</div>
+                <div class="th-sub">Cross paths, connect</div>
+              </div>
+            </th>
+            <th scope="col" style="background:rgba(139,92,246,.06)">
+              <div class="th-app-inner">
+                <div class="th-icon" style="background:rgba(139,92,246,.15)">⚡</div>
+                <div class="th-name" style="color:#8B5CF6">Badoo</div>
+                <div class="th-sub">Meet new people</div>
+              </div>
+            </th>
+            <th scope="col" style="background:rgba(239,68,68,.06)">
+              <div class="th-app-inner">
+                <div class="th-icon" style="background:rgba(239,68,68,.15)">❤️</div>
+                <div class="th-name" style="color:#EF4444">Match.com</div>
+                <div class="th-sub">Find your person</div>
+              </div>
+            </th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="td-feat">Reálný čas / live dostupnost<small>Vidíte kdo je k dispozici právě teď</small></td>
+            <td><span class="pill pill-no"><svg viewBox="0 0 11 11" fill="none" aria-hidden="true"><path d="M2 2l7 7M9 2L2 9" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>Ne</span></td>
+            <td><span class="pill pill-no"><svg viewBox="0 0 11 11" fill="none" aria-hidden="true"><path d="M2 2l7 7M9 2L2 9" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>Ne</span></td>
+            <td><span class="pill pill-part">Částečně</span></td>
+            <td><span class="pill pill-no"><svg viewBox="0 0 11 11" fill="none" aria-hidden="true"><path d="M2 2l7 7M9 2L2 9" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>Ne</span></td>
+            <td><span class="pill pill-no"><svg viewBox="0 0 11 11" fill="none" aria-hidden="true"><path d="M2 2l7 7M9 2L2 9" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>Ne</span></td>
+          </tr>
+          <tr>
+            <td class="td-feat">Bez swipování<small>Nepotřebujete swipe mechaniku pro přístup</small></td>
+            <td><span class="pill pill-no"><svg viewBox="0 0 11 11" fill="none" aria-hidden="true"><path d="M2 2l7 7M9 2L2 9" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>Vyžadováno</span></td>
+            <td><span class="pill pill-part">Volitelné</span></td>
+            <td><span class="pill pill-no"><svg viewBox="0 0 11 11" fill="none" aria-hidden="true"><path d="M2 2l7 7M9 2L2 9" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>Vyžadováno</span></td>
+            <td><span class="pill pill-no"><svg viewBox="0 0 11 11" fill="none" aria-hidden="true"><path d="M2 2l7 7M9 2L2 9" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>Vyžadováno</span></td>
+            <td><span class="pill pill-no"><svg viewBox="0 0 11 11" fill="none" aria-hidden="true"><path d="M2 2l7 7M9 2L2 9" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>Vyžadováno</span></td>
+          </tr>
+          <tr>
+            <td class="td-feat">Ochrana soukromí polohy<small>Zobrazuje pouze vzdálenost, ne přesnou polohu</small></td>
+            <td><span class="pill pill-yes"><svg viewBox="0 0 11 11" fill="none" aria-hidden="true"><path d="M2 5.5L4.5 8 9 3" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>Dobrá</span></td>
+            <td><span class="pill pill-part">Přibližná zóna</span></td>
+            <td><span class="pill pill-no"><svg viewBox="0 0 11 11" fill="none" aria-hidden="true"><path d="M2 2l7 7M9 2L2 9" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>GPS trasa</span></td>
+            <td><span class="pill pill-part">Přibližná zóna</span></td>
+            <td><span class="pill pill-part">Přibližná zóna</span></td>
+          </tr>
+          <tr>
+            <td class="td-feat">Průměrná doba do schůzky<small>Od otevření aplikace do reálného setkání</small></td>
+            <td><span class="pill pill-part">Dny–týdny</span></td>
+            <td><span class="pill pill-no"><svg viewBox="0 0 11 11" fill="none" aria-hidden="true"><path d="M2 2l7 7M9 2L2 9" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>Týdny</span></td>
+            <td><span class="pill pill-part">Dny–týdny</span></td>
+            <td><span class="pill pill-no"><svg viewBox="0 0 11 11" fill="none" aria-hidden="true"><path d="M2 2l7 7M9 2L2 9" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>Týdny–měsíce</span></td>
+            <td><span class="pill pill-no"><svg viewBox="0 0 11 11" fill="none" aria-hidden="true"><path d="M2 2l7 7M9 2L2 9" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>Měsíce</span></td>
+          </tr>
+          <tr>
+            <td class="td-feat">Skupinová setkání<small>Podpora pro první schůzku ve skupině</small></td>
+            <td><span class="pill pill-no"><svg viewBox="0 0 11 11" fill="none" aria-hidden="true"><path d="M2 2l7 7M9 2L2 9" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>Ne</span></td>
+            <td><span class="pill pill-no"><svg viewBox="0 0 11 11" fill="none" aria-hidden="true"><path d="M2 2l7 7M9 2L2 9" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>Ne</span></td>
+            <td><span class="pill pill-no"><svg viewBox="0 0 11 11" fill="none" aria-hidden="true"><path d="M2 2l7 7M9 2L2 9" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>Ne</span></td>
+            <td><span class="pill pill-no"><svg viewBox="0 0 11 11" fill="none" aria-hidden="true"><path d="M2 2l7 7M9 2L2 9" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>Ne</span></td>
+            <td><span class="pill pill-no"><svg viewBox="0 0 11 11" fill="none" aria-hidden="true"><path d="M2 2l7 7M9 2L2 9" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>Ne</span></td>
+          </tr>
+          <tr>
+            <td class="td-feat">Transparentnost algoritmu<small>Víte proč vidíte koho vidíte</small></td>
+            <td><span class="pill pill-part">Částečná</span></td>
+            <td><span class="pill pill-part">Částečná</span></td>
+            <td><span class="pill pill-no"><svg viewBox="0 0 11 11" fill="none" aria-hidden="true"><path d="M2 2l7 7M9 2L2 9" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>Černá skříňka</span></td>
+            <td><span class="pill pill-no"><svg viewBox="0 0 11 11" fill="none" aria-hidden="true"><path d="M2 2l7 7M9 2L2 9" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>Černá skříňka</span></td>
+            <td><span class="pill pill-no"><svg viewBox="0 0 11 11" fill="none" aria-hidden="true"><path d="M2 2l7 7M9 2L2 9" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>Černá skříňka</span></td>
+          </tr>
+          <tr>
+            <td class="td-feat">Cena<small>Základní verze zdarma + prémiové tariffy</small></td>
+            <td>
+              <div class="price-wrap">
+                <span class="price-free">✓ Zdarma</span>
+                <span class="price-tier"><strong>Hinge+</strong> — 19,99 €/měs</span>
+                <span class="price-tier"><strong>HingeX</strong> — 29,99 €/měs</span>
+              </div>
+            </td>
+            <td>
+              <div class="price-wrap">
+                <span class="price-free">✓ Zdarma</span>
+                <span class="price-tier"><strong>A-List</strong> — 9,99 €/měs</span>
+              </div>
+            </td>
+            <td>
+              <div class="price-wrap">
+                <span class="price-free">✓ Zdarma</span>
+                <span class="price-tier"><strong>Premium</strong> — 19,99 €/měs</span>
+              </div>
+            </td>
+            <td>
+              <div class="price-wrap">
+                <span class="price-free">✓ Zdarma</span>
+                <span class="price-tier"><strong>Premium</strong> — 9,99 €/měs</span>
+              </div>
+            </td>
+            <td>
+              <div class="price-wrap">
+                <span class="price-tier"><strong>Standard</strong> — 29,99 €/měs</span>
+                <span class="price-tier"><strong>Premium</strong> — 39,99 €/měs</span>
+              </div>
+            </td>
+          </tr>
+        </tbody>
+        <tfoot>
+          <tr>
+            <td style="text-align:left;font-size:12px;color:var(--t3)">Data na základě veřejně dostupných informací o funkcích. Aktualizováno duben 2026.</td>
+            <td class="verdict-cell" style="color:var(--t2)">Záměrné vztahy, bez live funkce</td>
+            <td class="verdict-cell" style="color:var(--t2)">Hodnotové párování, pomalé tempo</td>
+            <td class="verdict-cell" style="color:var(--t2)">Blízkost ano, live ne</td>
+            <td class="verdict-cell" style="color:var(--t2)">Velká základna, engagement-first</td>
+            <td class="verdict-cell" style="color:var(--t2)">Prémium segment, dlouhý proces</td>
+          </tr>
+        </tfoot>
+      </table>
+    </div>
+  </div>
+</section>
+
+<!-- ══ APP REVIEWS ═════════════════════════════════════════════════════ -->
+<section class="reviews section" id="reviews" style="position:relative">
+  <div class="sec-bg" aria-hidden="true">
+    <div class="sec-lines"></div>
+    <div class="sec-orb" style="width:460px;height:460px;top:-100px;right:-80px;background:radial-gradient(circle,rgba(255,68,88,.09),transparent 70%);animation:o1 10s ease-in-out infinite"></div>
+    <div class="sec-orb" style="width:340px;height:340px;bottom:-60px;left:-50px;background:radial-gradient(circle,rgba(79,142,247,.1),transparent 70%);animation:o2 8s ease-in-out infinite"></div>
+    <div class="sec-orb" style="width:280px;height:280px;top:45%;left:40%;background:radial-gradient(circle,rgba(251,191,36,.06),transparent 70%);animation:o4 12s ease-in-out infinite"></div>
+    <div class="float-ring" style="width:350px;height:350px;bottom:5%;right:20%;--dur:10s;--del:2s"></div>
+  </div>
+  <div class="wrap">
+    <div class="sr" style="margin-bottom:52px">
+      <div class="label-row"><div class="label-line"></div><span class="label-text">App Reviews</span><div class="label-line"></div></div>
+      <h2 class="section-title">Our <span class="gt-amber">honest take</span> on each app</h2>
+      <p class="section-sub">Reviewed through one lens only: does this app's design reduce friction between you and a real‑life meeting?</p>
+    </div>
+
+    <div class="reviews-grid">
+
+      <!-- Metemi — PRVNÍ / VÍTĚZ -->
+      <article class="rcard rc-metemi sr d1" style="position:relative;border-color:rgba(79,142,247,.35);box-shadow:0 0 0 1px rgba(79,142,247,.2), var(--sh-md)">
+        <!-- Razítko vítěze -->
+        <div class="winner-stamp" aria-label="Vítěz testu"></div>
+        <div class="rcard-header">
+          <div class="rcard-app-info">
+            <div class="rcard-icon" style="background:transparent;padding:0;overflow:hidden"><img src="metemi_logo.svg" alt="Metemi" width="52" height="52" style="display:block;border-radius:15px"/></div>
+            <div>
+              <div class="rcard-name gt-blue">Metemi</div>
+              <div class="rcard-type">Meeting-first</div>
+              <div class="stars" aria-label="5 out of 5">
+                <span class="s-full" aria-hidden="true">★</span><span class="s-full" aria-hidden="true">★</span><span class="s-full" aria-hidden="true">★</span><span class="s-full" aria-hidden="true">★</span><span class="s-full" aria-hidden="true">★</span>
+              </div>
+            </div>
+          </div>
+          <div><div class="score gt-blue">5.0</div><div class="score-lbl">/ 5.0 IRL</div></div>
+        </div>
+        <div class="verdict-badge vb-best">🏆 Vítěz testu 2026</div>
+        <p class="rcard-body">Metemi takes a fundamentally different architectural approach. Rather than a swipe queue of profiles, you see real people around you right now who are actively open to meeting. No swiping. Built-in "Open Phrases" lower the activation energy for conversation, and group meeting support reduces first-encounter anxiety.</p>
+        <div class="rcard-points">
+          <div class="rp rp-pro"><svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true"><circle cx="7" cy="7" r="6" stroke="currentColor" stroke-width="1.3"/><path d="M4.5 7l2 2 3-3" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Real-time, proximity-based discovery</span></div>
+          <div class="rp rp-pro"><svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true"><circle cx="7" cy="7" r="6" stroke="currentColor" stroke-width="1.3"/><path d="M4.5 7l2 2 3-3" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/></svg><span>No swiping — meeting intent is explicit</span></div>
+          <div class="rp rp-pro"><svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true"><circle cx="7" cy="7" r="6" stroke="currentColor" stroke-width="1.3"/><path d="M4.5 7l2 2 3-3" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Open Phrases remove first-message anxiety</span></div>
+          <div class="rp rp-pro"><svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true"><circle cx="7" cy="7" r="6" stroke="currentColor" stroke-width="1.3"/><path d="M4.5 7l2 2 3-3" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Group meeting option for lower-stakes first encounter</span></div>
+          <div class="rp rp-pro"><svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true"><circle cx="7" cy="7" r="6" stroke="currentColor" stroke-width="1.3"/><path d="M4.5 7l2 2 3-3" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Distance-only location — strong privacy by design</span></div>
+        </div>
+        <div class="speed-meter">
+          <div class="speed-lbl"><span>Speed to real-life meeting</span><span style="color:var(--green)">High</span></div>
+          <div class="speed-track"><div class="speed-fill sf-metemi" data-w="94"></div></div>
+        </div>
+      </article>
+
+      <!-- Tinder -->
+      <article class="rcard rc-tinder sr d2">
+        <div class="rcard-header">
+          <div class="rcard-app-info">
+            <div class="rcard-icon" style="background:transparent;padding:0;overflow:hidden"><img src="Tinder.svg" alt="Tinder" width="52" height="52" style="display:block;border-radius:15px"/></div>
+            <div>
+              <div class="rcard-name">Tinder</div>
+              <div class="rcard-type">Swipe-centric</div>
+              <div class="stars" aria-label="3 out of 5">
+                <span class="s-full" aria-hidden="true">★</span><span class="s-full" aria-hidden="true">★</span><span class="s-full" aria-hidden="true">★</span><span class="s-empty" aria-hidden="true">★</span><span class="s-empty" aria-hidden="true">★</span>
+              </div>
+            </div>
+          </div>
+          <div><div class="score" style="color:var(--tinder)">3.0</div><div class="score-lbl">/ 5.0 IRL</div></div>
+        </div>
+        <div class="verdict-badge vb-neutral">Engagement-First</div>
+        <p class="rcard-body">Tinder is the largest dating app globally, offering the highest potential for matching volume. However, its core design — the right-swipe mechanism — functions as a habit loop rather than a pathway to meeting.</p>
+        <div class="rcard-points">
+          <div class="rp rp-pro"><svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true"><circle cx="7" cy="7" r="6" stroke="currentColor" stroke-width="1.3"/><path d="M4.5 7l2 2 3-3" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Largest user pool in most cities</span></div>
+          <div class="rp rp-pro"><svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true"><circle cx="7" cy="7" r="6" stroke="currentColor" stroke-width="1.3"/><path d="M4.5 7l2 2 3-3" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Broad demographic reach and age range</span></div>
+          <div class="rp rp-con"><svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true"><circle cx="7" cy="7" r="6" stroke="currentColor" stroke-width="1.3"/><path d="M4.5 4.5l5 5M9.5 4.5l-5 5" stroke="currentColor" stroke-width="1.3" stroke-linecap="round"/></svg><span>Swipe fatigue is well-documented</span></div>
+          <div class="rp rp-con"><svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true"><circle cx="7" cy="7" r="6" stroke="currentColor" stroke-width="1.3"/><path d="M4.5 4.5l5 5M9.5 4.5l-5 5" stroke="currentColor" stroke-width="1.3" stroke-linecap="round"/></svg><span>No structural push toward meeting</span></div>
+          <div class="rp rp-con"><svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true"><circle cx="7" cy="7" r="6" stroke="currentColor" stroke-width="1.3"/><path d="M4.5 4.5l5 5M9.5 4.5l-5 5" stroke="currentColor" stroke-width="1.3" stroke-linecap="round"/></svg><span>Visibility locked behind paid tiers</span></div>
+        </div>
+        <div class="speed-meter">
+          <div class="speed-lbl"><span>Speed to real-life meeting</span><span>Low</span></div>
+          <div class="speed-track"><div class="speed-fill sf-tinder" data-w="22"></div></div>
+        </div>
+      </article>
+
+      <!-- Bumble -->
+      <article class="rcard rc-bumble sr d3">
+        <div class="rcard-header">
+          <div class="rcard-app-info">
+            <div class="rcard-icon" style="background:transparent;padding:0;overflow:visible;border-radius:0"><img src="bumble.svg" alt="Bumble" width="58" height="52" style="display:block;object-fit:contain"/></div>
+            <div>
+              <div class="rcard-name">Bumble</div>
+              <div class="rcard-type">Conversation-first</div>
+              <div class="stars" aria-label="4 out of 5">
+                <span class="s-full" aria-hidden="true">★</span><span class="s-full" aria-hidden="true">★</span><span class="s-full" aria-hidden="true">★</span><span class="s-full" aria-hidden="true">★</span><span class="s-empty" aria-hidden="true">★</span>
+              </div>
+            </div>
+          </div>
+          <div><div class="score" style="color:var(--bumble)">3.5</div><div class="score-lbl">/ 5.0 IRL</div></div>
+        </div>
+        <div class="verdict-badge vb-ok">More Intentional</div>
+        <p class="rcard-body">Bumble introduced a meaningful innovation: women must initiate, reducing low-effort outreach and generally producing higher signal conversations. Despite improvements in conversation quality, the core swipe-based architecture remains unchanged.</p>
+        <div class="rcard-points">
+          <div class="rp rp-pro"><svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true"><circle cx="7" cy="7" r="6" stroke="currentColor" stroke-width="1.3"/><path d="M4.5 7l2 2 3-3" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Higher-quality conversation initiation on average</span></div>
+          <div class="rp rp-pro"><svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true"><circle cx="7" cy="7" r="6" stroke="currentColor" stroke-width="1.3"/><path d="M4.5 7l2 2 3-3" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/></svg><span>IRL date suggestion feature shows intent awareness</span></div>
+          <div class="rp rp-con"><svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true"><circle cx="7" cy="7" r="6" stroke="currentColor" stroke-width="1.3"/><path d="M4.5 4.5l5 5M9.5 4.5l-5 5" stroke="currentColor" stroke-width="1.3" stroke-linecap="round"/></svg><span>Still fundamentally swipe-based</span></div>
+          <div class="rp rp-con"><svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true"><circle cx="7" cy="7" r="6" stroke="currentColor" stroke-width="1.3"/><path d="M4.5 4.5l5 5M9.5 4.5l-5 5" stroke="currentColor" stroke-width="1.3" stroke-linecap="round"/></svg><span>24-hour expiry creates pressure, not connection</span></div>
+          <div class="rp rp-con"><svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true"><circle cx="7" cy="7" r="6" stroke="currentColor" stroke-width="1.3"/><path d="M4.5 4.5l5 5M9.5 4.5l-5 5" stroke="currentColor" stroke-width="1.3" stroke-linecap="round"/></svg><span>No real-time proximity awareness</span></div>
+        </div>
+        <div class="speed-meter">
+          <div class="speed-lbl"><span>Speed to real-life meeting</span><span>Medium</span></div>
+          <div class="speed-track"><div class="speed-fill sf-bumble" data-w="50"></div></div>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ══ FEATURES ════════════════════════════════════════════════════════ -->
+<section class="features section" id="features" style="position:relative">
+  <div class="sec-bg" aria-hidden="true">
+    <div class="sec-dots"></div>
+    <div class="sec-orb" style="width:500px;height:500px;top:-80px;right:-120px;background:radial-gradient(circle,rgba(45,212,191,.1),transparent 70%);animation:o2 10s ease-in-out infinite"></div>
+    <div class="sec-orb" style="width:400px;height:400px;bottom:-100px;left:-80px;background:radial-gradient(circle,rgba(168,85,247,.09),transparent 70%);animation:o1 12s ease-in-out infinite"></div>
+    <div class="sec-orb" style="width:300px;height:300px;top:35%;left:45%;background:radial-gradient(circle,rgba(251,191,36,.07),transparent 70%);animation:o3 9s ease-in-out infinite"></div>
+    <div class="float-ring" style="width:450px;height:450px;top:0%;left:5%;--dur:14s;--del:1s"></div>
+    <div class="float-ring" style="width:220px;height:220px;bottom:20%;right:10%;--dur:9s;--del:4s"></div>
+  </div>
+  <div class="wrap">
+    <div class="sr">
+      <div class="label-row"><div class="label-line"></div><span class="label-text">A Closer Look</span><div class="label-line"></div></div>
+      <h2 class="section-title">What makes Metemi <span class="gt-teal">structurally different</span></h2>
+      <p class="section-sub">Not just a feature difference — a design philosophy built around one outcome: the real‑life meeting.</p>
+    </div>
+
+    <div class="feat-grid">
+      <div class="fcard fc-1 sr d1">
+        <div class="fcard-glow" style="background:var(--blue)"></div>
+        <div class="fcard-icon" style="background:rgba(79,142,247,.12);color:var(--blue)">
+          <svg viewBox="0 0 26 26" fill="none" aria-hidden="true"><circle cx="13" cy="13" r="11" stroke="currentColor" stroke-width="1.8"/><path d="M13 7v6l4 2.5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+        </div>
+        <h3>Real-Time Discovery</h3>
+        <p>You see who's around you right now and actively open to meeting — a natural, contextual opportunity traditional apps don't offer.</p>
+      </div>
+      <div class="fcard fc-2 sr d2">
+        <div class="fcard-glow" style="background:var(--violet)"></div>
+        <div class="fcard-icon" style="background:rgba(168,85,247,.12);color:var(--violet)">
+          <svg viewBox="0 0 26 26" fill="none" aria-hidden="true"><path d="M8 13h10M13 8v10" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/><circle cx="13" cy="13" r="11" stroke="currentColor" stroke-width="1.8"/></svg>
+        </div>
+        <h3>Open Phrases</h3>
+        <p>Built-in conversation starters remove the blank first-message anxiety and function as structured icebreakers that help both parties relax.</p>
+      </div>
+      <div class="fcard fc-3 sr d3">
+        <div class="fcard-glow" style="background:var(--green)"></div>
+        <div class="fcard-icon" style="background:rgba(52,211,153,.12);color:var(--green)">
+          <svg viewBox="0 0 26 26" fill="none" aria-hidden="true"><circle cx="13" cy="13" r="5" stroke="currentColor" stroke-width="1.8"/><path d="M13 3v4M13 19v4M3 13h4M19 13h4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+        </div>
+        <h3>Individual &amp; Group Meetings</h3>
+        <p>Supports both one-on-one and group meeting formats — a meaningful choice for users who prefer a lower-stakes first encounter.</p>
+      </div>
+      <div class="fcard fc-4 sr d1">
+        <div class="fcard-glow" style="background:var(--pink)"></div>
+        <div class="fcard-icon" style="background:rgba(244,114,182,.12);color:var(--pink)">
+          <svg viewBox="0 0 26 26" fill="none" aria-hidden="true"><path d="M13 4C9 4 6 7 6 11c0 5 7 13 7 13s7-8 7-13c0-4-3-7-7-7z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/><circle cx="13" cy="11" r="2.5" stroke="currentColor" stroke-width="1.6"/></svg>
+        </div>
+        <h3>Distance, Not Location</h3>
+        <p>Shows "0.4 km away" but never a map pin. Reduces friction while preserving a meaningful privacy boundary.</p>
+      </div>
+      <div class="fcard fc-5 sr d2">
+        <div class="fcard-glow" style="background:var(--teal)"></div>
+        <div class="fcard-icon" style="background:rgba(45,212,191,.12);color:var(--teal)">
+          <svg viewBox="0 0 26 26" fill="none" aria-hidden="true"><rect x="3" y="5" width="20" height="16" rx="3" stroke="currentColor" stroke-width="1.8"/><path d="M3 10h20M8 14h2M12 14h6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+        </div>
+        <h3>No Algorithmic Lock-In</h3>
+        <p>Visibility isn't something you can buy or game — it's a function of where you are and when you choose to be discoverable.</p>
+      </div>
+      <div class="fcard fc-6 sr d3">
+        <div class="fcard-glow" style="background:var(--amber)"></div>
+        <div class="fcard-icon" style="background:rgba(251,191,36,.12);color:var(--amber)">
+          <svg viewBox="0 0 26 26" fill="none" aria-hidden="true"><path d="M13 4l2.3 4.6 5.1.75-3.7 3.6.87 5.09L13 15.7l-4.57 2.35.87-5.09L5.6 9.35l5.1-.75L13 4z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></svg>
+        </div>
+        <h3>Strict Safety Controls</h3>
+        <p>Granular control over who can see you and when. Visibility toggles instantly — practical safety beyond standard privacy settings.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ SWITCHING ══════════════════════════════════════════════════════ -->
+<section class="switching section" id="switching" style="position:relative">
+  <div class="sec-bg" aria-hidden="true">
+    <div class="sec-grid"></div>
+    <div class="sec-orb" style="width:440px;height:440px;top:-120px;left:-60px;background:radial-gradient(circle,rgba(79,142,247,.1),transparent 70%);animation:o1 11s ease-in-out infinite"></div>
+    <div class="sec-orb" style="width:360px;height:360px;bottom:-80px;right:-60px;background:radial-gradient(circle,rgba(244,114,182,.08),transparent 70%);animation:o2 9s ease-in-out infinite"></div>
+    <div class="float-ring" style="width:380px;height:380px;top:15%;right:5%;--dur:12s"></div>
+    <div class="float-ring" style="width:160px;height:160px;bottom:25%;left:15%;--dur:7s;--del:3s"></div>
+  </div>
+  <div class="wrap">
+    <div class="switching-inner">
+      <div class="swcol sr sr-left">
+        <div class="label-row" style="justify-content:flex-start;margin-bottom:16px">
+          <div class="label-line"></div><span class="label-text">User Insights</span>
+        </div>
+        <h2>Why people are stepping away from <span class="gt-blue">traditional dating apps</span></h2>
+        <p>The feedback pattern across app store reviews, Reddit, and forum discussions is consistent. Users aren't frustrated with dating — they're frustrated with the <em>interface</em> between them and dating.</p>
+        <div style="display:flex;align-items:center;flex-wrap:wrap;gap:0;margin-top:8px">
+          <div class="avatars-row">
+            <div class="av"><img src="https://i.pravatar.cc/40?img=5" alt="User avatar" loading="lazy"/></div>
+            <div class="av"><img src="https://i.pravatar.cc/40?img=12" alt="User avatar" loading="lazy"/></div>
+            <div class="av"><img src="https://i.pravatar.cc/40?img=20" alt="User avatar" loading="lazy"/></div>
+            <div class="av"><img src="https://i.pravatar.cc/40?img=32" alt="User avatar" loading="lazy"/></div>
+            <div class="av"><img src="https://i.pravatar.cc/40?img=44" alt="User avatar" loading="lazy"/></div>
+          </div>
+          <span class="av-proof">Based on <strong>2,400+</strong> user reports reviewed</span>
+        </div>
+      </div>
+
+      <div class="sw-list sr sr-right d1">
+        <div class="sw-item">
+          <div class="sw-icon"><svg viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="M3 10h14M10 3l7 7-7 7" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+          <div class="sw-text"><strong>Burned out on swiping</strong><span>Users describe a sense of meaninglessness after extended periods of swiping with no real-world outcome.</span></div>
+        </div>
+        <div class="sw-item">
+          <div class="sw-icon"><svg viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="M10 2a8 8 0 100 16A8 8 0 0010 2zm0 0v3M10 15v1M3 10H2M18 10h-1" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/><circle cx="10" cy="10" r="2.5" stroke="currentColor" stroke-width="1.7"/></svg></div>
+          <div class="sw-text"><strong>Wanting proximity-aware, spontaneous connection</strong><span>Coordination overhead kills momentum. Users want to know who's available around them right now.</span></div>
+        </div>
+        <div class="sw-item">
+          <div class="sw-icon"><svg viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14H6a2 2 0 00-2 2v1h12v-1a2 2 0 00-2-2h-2z" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+          <div class="sw-text"><strong>Preferring real-world chemistry over digital signals</strong><span>Long in-app conversations don't reliably predict in-person chemistry. A quick real meeting solves this.</span></div>
+        </div>
+        <div class="sw-item">
+          <div class="sw-icon"><svg viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="M9 12l2 2 4-4m-6-8l-4 4 4 4M5 8h10a2 2 0 012 2v5a2 2 0 01-2 2H5a2 2 0 01-2-2v-5a2 2 0 012-2z" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+          <div class="sw-text"><strong>Needing more granular safety and privacy control</strong><span>Sharing a full photo and location publicly feels like an uncomfortable trade-off.</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ PROBLEM ════════════════════════════════════════════════════════ -->
+<section class="problem section" id="problem" style="position:relative">
+  <div class="sec-bg" aria-hidden="true">
+    <div class="sec-dots"></div>
+    <div class="sec-orb" style="width:480px;height:480px;top:-160px;right:-80px;background:radial-gradient(circle,rgba(248,113,113,.1),transparent 70%);animation:o1 10s ease-in-out infinite"></div>
+    <div class="sec-orb" style="width:360px;height:360px;bottom:-100px;left:-60px;background:radial-gradient(circle,rgba(251,191,36,.08),transparent 70%);animation:o2 12s ease-in-out infinite"></div>
+    <div class="sec-orb" style="width:220px;height:220px;top:40%;left:55%;background:radial-gradient(circle,rgba(45,212,191,.07),transparent 70%);animation:o3 8s ease-in-out infinite"></div>
+    <div class="float-ring" style="width:300px;height:300px;top:10%;right:15%;--dur:9s;--del:1s"></div>
+    <div class="float-ring" style="width:180px;height:180px;bottom:15%;left:20%;--dur:7s;--del:2s"></div>
+  </div>
+    <div class="sr" style="text-align:center;max-width:660px;margin:0 auto 56px">
+      <div class="label-row"><div class="label-line"></div><span class="label-text">The Problem</span><div class="label-line"></div></div>
+      <h2 class="section-title">Most dating apps aren't built to help you <span class="gt-pink">meet anyone</span></h2>
+      <p style="font-size:16px;color:var(--t2);line-height:1.8;margin-top:16px">The business model of major platforms is built on engagement time — not successful meetings. This creates a fundamental misalignment with what users actually want.</p>
+    </div>
+
+    <div class="problem-grid">
+      <div class="pcard pcard-1 sr d1">
+        <div class="pcard-icon" style="background:rgba(248,113,113,.12)">💔</div>
+        <h3>Swipe Fatigue</h3>
+        <p>The swipe mechanic is a dopamine loop, not a connection tool. Users spend hours swiping before a single conversation begins.</p>
+        <div class="pcard-stat" style="color:var(--red)"><span class="counter" data-target="73" data-suffix="%">73%</span><span>of users report swipe fatigue within 3 months</span></div>
+      </div>
+      <div class="pcard pcard-2 sr d2">
+        <div class="pcard-icon" style="background:rgba(251,191,36,.12)">💬</div>
+        <h3>Endless Chat Loops</h3>
+        <p>Even when matches respond, conversations drag on for weeks with no clear path to meeting. Momentum dies.</p>
+        <div class="pcard-stat" style="color:var(--amber)"><span class="stat-num">&lt;20%</span><span>of matches ever send a single message</span></div>
+      </div>
+      <div class="pcard pcard-3 sr d3">
+        <div class="pcard-icon" style="background:rgba(45,212,191,.12)">📍</div>
+        <h3>No Real-Time Context</h3>
+        <p>Traditional apps show "nearby" people but coordinating schedules from a static pool kills any natural momentum.</p>
+        <div class="pcard-stat" style="color:var(--teal)"><span class="counter" data-target="50" data-suffix="km">50km</span><span>typical match radius — far too broad for spontaneity</span></div>
+      </div>
+      <div class="pcard pcard-4 sr d4">
+        <div class="pcard-icon" style="background:rgba(168,85,247,.12)">🔒</div>
+        <h3>Privacy Trade-Offs</h3>
+        <p>Sharing your photo publicly or revealing your location to get matches feels like a significant compromise.</p>
+        <div class="pcard-stat" style="color:var(--violet)"><span class="counter" data-target="41" data-suffix="%">41%</span><span>of users have privacy concerns about location sharing</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ CTA ════════════════════════════════════════════════════════════ -->
+<section class="cta-section" id="cta">
+  <div class="wrap">
+    <div class="cta-card sr sr-scale">
+      <div class="cta-orb co1" aria-hidden="true"></div>
+      <div class="cta-orb co2" aria-hidden="true"></div>
+      <div class="cta-orb co3" aria-hidden="true"></div>
+      <div class="cta-shimmer" aria-hidden="true"></div>
+      <div class="cta-inner">
+        <div class="cta-eyebrow">
+          <svg width="13" height="13" viewBox="0 0 13 13" fill="none" aria-hidden="true" style="flex-shrink:0"><circle cx="6.5" cy="6.5" r="5.5" stroke="currentColor" stroke-width="1.4"/><path d="M6.5 4v2.5l1.8 1.2" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/></svg>
+          Ready for a different approach?
+        </div>
+        <h2>You don't need more matches.<br>You need to actually meet.</h2>
+        <p>Most apps are built to keep you in the app. Metemi is built to get you out of it — to the coffee shop, the park, the conversation that actually matters.</p>
+        <a href="#" class="btn-cta-white">
+          Try Metemi — it's free
+          <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M3 8h10M9 5l3 3-3 3" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </a>
+        <p class="cta-note">No commission. No sponsored content. Independent analysis of publicly available features and aggregated user feedback. <a href="#">Editorial policy →</a></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ FOOTER ═════════════════════════════════════════════════════════ -->
+<footer>
+  <div class="wrap">
+    <div class="footer-inner">
+      <a href="#" class="footer-logo">AppReview.io</a>
+      <p>© 2026 AppReview.io. Independent consumer guide. Not affiliated with Tinder, Bumble, or Metemi.<br>
+        <a href="#">Editorial policy</a> · <a href="#">Privacy</a> · <a href="#">Contact</a> · <a href="#">Disclosure</a>
+      </p>
+    </div>
+  </div>
+</footer>
+
+<!-- ══ JS ══════════════════════════════════════════════════════════════ -->
+<script>
+(function(){
+  'use strict';
+  const reduced = window.matchMedia('(prefers-reduced-motion:reduce)').matches;
+
+  /* scroll progress */
+  const pb = document.getElementById('progressBar');
+  window.addEventListener('scroll', () => {
+    const pct = window.scrollY / (document.documentElement.scrollHeight - window.innerHeight) * 100;
+    pb.style.width = pct + '%';
+  }, { passive:true });
+
+  /* nav */
+  const nav = document.getElementById('nav');
+  window.addEventListener('scroll', () => {
+    nav.classList.toggle('scrolled', window.scrollY > 12);
+  }, { passive:true });
+
+  /* scroll reveal */
+  if (!reduced) {
+    const obs = new IntersectionObserver(entries => {
+      entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('in'); obs.unobserve(e.target) } });
+    }, { threshold:.1, rootMargin:'0px 0px -44px 0px' });
+    document.querySelectorAll('.sr').forEach(el => {
+      el.getBoundingClientRect().top < window.innerHeight * .94 ? el.classList.add('in') : obs.observe(el);
+    });
+  } else {
+    document.querySelectorAll('.sr').forEach(el => el.classList.add('in'));
+  }
+
+  /* counter */
+  function animCount(el) {
+    const end = parseInt(el.dataset.target);
+    const suf = el.dataset.suffix || '';
+    const dur = 1400;
+    const t0 = performance.now();
+    (function step(now){
+      const p = Math.min((now-t0)/dur,1);
+      const e = 1-Math.pow(1-p,3);
+      el.textContent = Math.round(e*end)+suf;
+      if(p<1) requestAnimationFrame(step);
+    })(performance.now());
+  }
+  if (!reduced) {
+    const co = new IntersectionObserver(entries => {
+      entries.forEach(e => { if(e.isIntersecting){ animCount(e.target); co.unobserve(e.target) } });
+    }, { threshold:.6 });
+    document.querySelectorAll('.counter').forEach(el => co.observe(el));
+  }
+
+  /* speed bars */
+  const bo = new IntersectionObserver(entries => {
+    entries.forEach(e => {
+      if(e.isIntersecting){
+        const f = e.target.querySelector('.speed-fill');
+        if(f) setTimeout(()=>{ f.style.width = f.dataset.w+'%' }, 300);
+        bo.unobserve(e.target);
+      }
+    });
+  }, { threshold:.5 });
+  document.querySelectorAll('.rcard').forEach(c => bo.observe(c));
+
+  /* table column hover */
+  const t = document.getElementById('compTable');
+  if(t){
+    const map = { 'col-m':'col-hl-m','col-t':'col-hl-t','col-b':'col-hl-b','col-m-head':'col-hl-m','col-t-head':'col-hl-t','col-b-head':'col-hl-b' };
+    const clear = () => t.classList.remove('col-hl-t','col-hl-b','col-hl-m');
+    t.querySelectorAll('td,th').forEach(cell => {
+      const k = [...cell.classList].find(c=>map[c]);
+      if(k){ cell.addEventListener('mouseenter',()=>{ clear(); t.classList.add(map[k]) }); cell.addEventListener('mouseleave',clear) }
+    });
+  }
+
+  /* smooth anchors */
+  document.querySelectorAll('a[href^="#"]').forEach(a => {
+    a.addEventListener('click', e => {
+      const el = document.querySelector(a.getAttribute('href'));
+      if(!el) return;
+      e.preventDefault();
+      window.scrollTo({ top: el.getBoundingClientRect().top + window.scrollY - 76, behavior:'smooth' });
+    });
+  });
+
+  /* button press feel */
+  document.querySelectorAll('.btn-grad,.btn-cta-white,.nav-cta').forEach(b => {
+    b.addEventListener('mousedown', () => { b.style.transform = 'scale(.97) translateY(1px)' });
+    ['mouseup','mouseleave'].forEach(ev => b.addEventListener(ev, () => { b.style.transform = '' }));
+  });
+
+  /* ── Aurora ambient canvas ───────────────── */
+  (function() {
+    const canvas = document.getElementById('particleCanvas');
+    const ctx = canvas.getContext('2d');
+    let W, H, t = 0;
+
+    // Aurora nodes — each slowly drifts and pulses
+    const nodes = [
+      { bx:.15, by:.08, r:.55, hue:225, sat:90, speed:.00018, amp:.12, phase:0   },
+      { bx:.80, by:.14, r:.50, hue:270, sat:85, speed:.00014, amp:.10, phase:1.8 },
+      { bx:.50, by:.38, r:.45, hue:190, sat:80, speed:.00022, amp:.08, phase:3.2 },
+      { bx:.20, by:.62, r:.52, hue:310, sat:88, speed:.00016, amp:.11, phase:0.9 },
+      { bx:.75, by:.55, r:.48, hue:248, sat:82, speed:.00020, amp:.09, phase:2.5 },
+      { bx:.40, by:.80, r:.44, hue:168, sat:75, speed:.00012, amp:.13, phase:4.1 },
+      { bx:.90, by:.85, r:.40, hue:340, sat:78, speed:.00024, amp:.07, phase:1.3 },
+    ];
+
+    function resize() {
+      W = canvas.width  = window.innerWidth;
+      H = canvas.height = document.documentElement.scrollHeight;
+    }
+
+    function ease(x) { return x < .5 ? 2*x*x : 1-Math.pow(-2*x+2,2)/2; }
+
+    function draw() {
+      t++;
+      ctx.clearRect(0, 0, W, H);
+
+      for (const n of nodes) {
+        // organic position drift using two sine waves per axis
+        const px = n.bx + Math.sin(t * n.speed * 1.0 + n.phase) * n.amp
+                        + Math.sin(t * n.speed * 0.6 + n.phase + 1) * n.amp * .5;
+        const py = n.by + Math.cos(t * n.speed * 0.8 + n.phase) * n.amp
+                        + Math.cos(t * n.speed * 1.3 + n.phase + 2) * n.amp * .4;
+
+        // hue slowly drifts ±18°
+        const hue = n.hue + Math.sin(t * n.speed * 0.4 + n.phase) * 18;
+
+        // radius breathes ±8%
+        const rPct = n.r + Math.sin(t * n.speed * 1.7 + n.phase) * 0.08;
+        const radius = Math.min(W, H) * rPct;
+
+        // opacity breathes between 0.06 and 0.18
+        const alpha = 0.12 + Math.sin(t * n.speed * 2.1 + n.phase) * 0.06;
+
+        const x = px * W, y = py * H;
+        const grad = ctx.createRadialGradient(x, y, 0, x, y, radius);
+        grad.addColorStop(0,   `hsla(${hue},${n.sat}%,65%,${alpha})`);
+        grad.addColorStop(0.4, `hsla(${hue},${n.sat}%,55%,${alpha * .5})`);
+        grad.addColorStop(1,   `hsla(${hue},${n.sat}%,45%,0)`);
+
+        ctx.beginPath();
+        ctx.ellipse(x, y, radius, radius * .75, Math.sin(t * n.speed * .3 + n.phase) * .4, 0, Math.PI * 2);
+        ctx.fillStyle = grad;
+        ctx.fill();
+      }
+
+      requestAnimationFrame(draw);
+    }
+
+    resize();
+    draw();
+
+    let rt;
+    window.addEventListener('resize', () => { clearTimeout(rt); rt = setTimeout(resize, 150); });
+    setTimeout(resize, 900); // after fonts/images load and page height settles
+  })();
+
+})();
+</script>
+</body>
+</html>
