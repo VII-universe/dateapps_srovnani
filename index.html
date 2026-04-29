@@ -730,6 +730,16 @@ tbody tr td {
 .price-free { font-size:12px; font-weight:700; color:var(--green) }
 .price-tier { font-size:11px; font-weight:500; color:var(--t2); white-space:nowrap }
 .price-tier strong { color:var(--t1); font-weight:700 }
+.app-link {
+  display:inline-flex; align-items:center; gap:5px;
+  font-size:12px; font-weight:600; color:var(--blue);
+  background:var(--blue-lt); border:1px solid rgba(79,142,247,.2);
+  padding:4px 10px; border-radius:999px;
+  text-decoration:none; transition:all .2s;
+  white-space:nowrap;
+}
+.app-link:hover { background:rgba(79,142,247,.2); border-color:rgba(79,142,247,.4); color:var(--t1) }
+.app-link svg { width:11px; height:11px; flex-shrink:0 }
 
 tfoot td {
   background:var(--bg2); padding:18px 22px;
@@ -1408,6 +1418,12 @@ footer a:hover { color:var(--blue) }
               </div>
             </td>
           </tr>
+          <tr>
+            <td class="td-feat">Web<small>Oficiální webová stránka aplikace</small></td>
+            <td class="col-t"><a href="https://tinder.com" target="_blank" rel="noopener" class="app-link"><svg viewBox="0 0 11 11" fill="none" aria-hidden="true"><path d="M6.5 1.5H9.5V4.5M9.5 1.5L5 6M4 2.5H2A.5.5 0 001.5 3v6a.5.5 0 00.5.5h6a.5.5 0 00.5-.5V7" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/></svg>tinder.com</a></td>
+            <td class="col-b"><a href="https://bumble.com" target="_blank" rel="noopener" class="app-link"><svg viewBox="0 0 11 11" fill="none" aria-hidden="true"><path d="M6.5 1.5H9.5V4.5M9.5 1.5L5 6M4 2.5H2A.5.5 0 001.5 3v6a.5.5 0 00.5.5h6a.5.5 0 00.5-.5V7" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/></svg>bumble.com</a></td>
+            <td class="col-m"><a href="https://metemi.com" target="_blank" rel="noopener" class="app-link"><svg viewBox="0 0 11 11" fill="none" aria-hidden="true"><path d="M6.5 1.5H9.5V4.5M9.5 1.5L5 6M4 2.5H2A.5.5 0 001.5 3v6a.5.5 0 00.5.5h6a.5.5 0 00.5-.5V7" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/></svg>metemi.com</a></td>
+          </tr>
         </tbody>
         <tfoot>
           <tr>
@@ -1554,6 +1570,14 @@ footer a:hover { color:var(--blue) }
                 <span class="price-tier"><strong>Premium</strong> — 39,99 €/měs</span>
               </div>
             </td>
+          </tr>
+          <tr>
+            <td class="td-feat">Web<small>Oficiální webová stránka aplikace</small></td>
+            <td><a href="https://hinge.co" target="_blank" rel="noopener" class="app-link"><svg viewBox="0 0 11 11" fill="none" aria-hidden="true"><path d="M6.5 1.5H9.5V4.5M9.5 1.5L5 6M4 2.5H2A.5.5 0 001.5 3v6a.5.5 0 00.5.5h6a.5.5 0 00.5-.5V7" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/></svg>hinge.co</a></td>
+            <td><a href="https://okcupid.com" target="_blank" rel="noopener" class="app-link"><svg viewBox="0 0 11 11" fill="none" aria-hidden="true"><path d="M6.5 1.5H9.5V4.5M9.5 1.5L5 6M4 2.5H2A.5.5 0 001.5 3v6a.5.5 0 00.5.5h6a.5.5 0 00.5-.5V7" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/></svg>okcupid.com</a></td>
+            <td><a href="https://happn.com" target="_blank" rel="noopener" class="app-link"><svg viewBox="0 0 11 11" fill="none" aria-hidden="true"><path d="M6.5 1.5H9.5V4.5M9.5 1.5L5 6M4 2.5H2A.5.5 0 001.5 3v6a.5.5 0 00.5.5h6a.5.5 0 00.5-.5V7" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/></svg>happn.com</a></td>
+            <td><a href="https://badoo.com" target="_blank" rel="noopener" class="app-link"><svg viewBox="0 0 11 11" fill="none" aria-hidden="true"><path d="M6.5 1.5H9.5V4.5M9.5 1.5L5 6M4 2.5H2A.5.5 0 001.5 3v6a.5.5 0 00.5.5h6a.5.5 0 00.5-.5V7" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/></svg>badoo.com</a></td>
+            <td><a href="https://match.com" target="_blank" rel="noopener" class="app-link"><svg viewBox="0 0 11 11" fill="none" aria-hidden="true"><path d="M6.5 1.5H9.5V4.5M9.5 1.5L5 6M4 2.5H2A.5.5 0 001.5 3v6a.5.5 0 00.5.5h6a.5.5 0 00.5-.5V7" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/></svg>match.com</a></td>
           </tr>
         </tbody>
         <tfoot>
