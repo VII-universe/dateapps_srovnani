@@ -499,7 +499,7 @@ svg { display:block; flex-shrink:0 }
   transform:translateX(-160%);
   animation:logoShineSweep var(--shine-dur,3.8s) ease-in-out infinite var(--shine-del,0s);
 }
-@keyframes logoShineSweep{0%,50%{transform:translateX(-160%)}72%,100%{transform:translateX(260%)}}
+@keyframes logoShineSweep{0%,48%{transform:translateX(-160%);opacity:0}52%{opacity:1}70%,100%{transform:translateX(260%);opacity:0}}
 
 @keyframes tinderGlow{
   0%,100%{box-shadow:0 20px 60px rgba(254,60,114,.55),var(--sh-md)}
@@ -555,10 +555,10 @@ svg { display:block; flex-shrink:0 }
 .app-badge-small:hover { transform:scale(1.12) rotate(0deg) !important }
 .app-badge-small .logo-shine { --shine-dur:5s }
 
-.abs-hinge  { background:#E73C7E; top:38%; left:0%;  animation:alfFloat2 7s   ease-in-out infinite .4s }
-.abs-happn  { background:#FF3C5F; top:38%; right:0%; animation:alfFloat1 6.4s ease-in-out infinite 1s }
-.abs-badoo  { background:#6B3AE0; bottom:28%; left:4%; animation:alfFloat3 5.8s ease-in-out infinite .7s }
-.abs-okcupid{ background:#2197F3; bottom:28%; right:4%; animation:alfFloat1 6.8s ease-in-out infinite 1.4s }
+.abs-hinge  { background:transparent; top:38%; left:0%;  animation:alfFloat2 7s   ease-in-out infinite .4s }
+.abs-happn  { background:transparent; top:38%; right:0%; animation:alfFloat1 6.4s ease-in-out infinite 1s }
+.abs-badoo  { background:transparent; bottom:28%; left:4%; animation:alfFloat3 5.8s ease-in-out infinite .7s }
+.abs-okcupid{ background:transparent; bottom:28%; right:4%; animation:alfFloat1 6.8s ease-in-out infinite 1.4s }
 
 /* ══════════════════════════════════════════════
    PROBLEM SECTION
@@ -1253,19 +1253,19 @@ footer a:hover { color:var(--blue) }
 
           <!-- Small secondary app badges -->
           <div class="app-badge-small abs-hinge" title="Hinge" aria-hidden="true">
-            💜
+            <img src="hinge_icon.png" alt="Hinge" style="width:100%;height:100%;object-fit:cover;display:block"/>
             <div class="logo-shine" style="--shine-dur:5s;--shine-del:0.5s" aria-hidden="true"></div>
           </div>
           <div class="app-badge-small abs-happn" title="Happn" aria-hidden="true">
-            💚
+            <img src="happn_icon.png" alt="Happn" style="width:100%;height:100%;object-fit:cover;display:block"/>
             <div class="logo-shine" style="--shine-dur:5.4s;--shine-del:1.8s" aria-hidden="true"></div>
           </div>
           <div class="app-badge-small abs-badoo" title="Badoo" aria-hidden="true">
-            ⚡
+            <img src="badoo_icon.png" alt="Badoo" style="width:100%;height:100%;object-fit:cover;display:block"/>
             <div class="logo-shine" style="--shine-dur:4.8s;--shine-del:0.9s" aria-hidden="true"></div>
           </div>
           <div class="app-badge-small abs-okcupid" title="OkCupid" aria-hidden="true">
-            🧡
+            <img src="okcupid_icon.png" alt="OkCupid" style="width:100%;height:100%;object-fit:cover;display:block"/>
             <div class="logo-shine" style="--shine-dur:5.2s;--shine-del:2.3s" aria-hidden="true"></div>
           </div>
 
