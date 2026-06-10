@@ -1064,6 +1064,78 @@ footer a { color:var(--t3); text-decoration:underline }
 footer a:hover { color:var(--blue) }
 
 /* ══════════════════════════════════════════════
+   SOURCES / RESEARCH SECTION
+══════════════════════════════════════════════ */
+.sources { background:var(--bg); border-top:1px solid var(--border) }
+
+.sources-grid {
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:18px;
+}
+@media(max-width:900px){ .sources-grid{grid-template-columns:repeat(2,1fr)} }
+@media(max-width:520px){ .sources-grid{grid-template-columns:1fr} }
+
+.src-card {
+  display:flex; flex-direction:column;
+  padding:24px;
+  background:var(--surface);
+  border:1.5px solid var(--border);
+  border-radius:var(--r);
+  text-decoration:none; color:inherit;
+  position:relative; overflow:hidden;
+  transition:all .3s var(--spring);
+}
+.src-card::before {
+  content:'';
+  position:absolute; left:0; top:0; bottom:0; width:3px;
+  background:var(--src-color, var(--blue));
+  opacity:0;
+  transition:opacity .25s;
+}
+.src-card:hover {
+  border-color:var(--border2);
+  box-shadow:var(--sh-md);
+  transform:translateY(-4px);
+}
+.src-card:hover::before { opacity:1 }
+
+.src-top {
+  display:flex; align-items:center; justify-content:space-between;
+  margin-bottom:14px;
+}
+.src-badge {
+  font-size:10.5px; font-weight:700; letter-spacing:.06em;
+  text-transform:uppercase; padding:3px 10px; border-radius:999px;
+  background:var(--src-bg, rgba(79,142,247,.12));
+  color:var(--src-color, var(--blue));
+  white-space:nowrap;
+}
+.src-year {
+  font-size:11px; font-weight:500; color:var(--t3);
+}
+.src-title {
+  font-size:14px; font-weight:700; color:var(--t1);
+  line-height:1.45; letter-spacing:-.02em;
+  margin-bottom:10px;
+  flex:1;
+}
+.src-finding {
+  font-size:12.5px; color:var(--t2); line-height:1.7;
+  margin-bottom:18px; flex:1;
+}
+.src-finding strong { color:var(--t1) }
+.src-read {
+  display:inline-flex; align-items:center; gap:5px;
+  font-size:12px; font-weight:600;
+  color:var(--src-color, var(--blue));
+  margin-top:auto;
+  transition:gap .2s var(--ease);
+}
+.src-card:hover .src-read { gap:9px }
+.src-read svg { width:12px; height:12px; flex-shrink:0 }
+
+/* ══════════════════════════════════════════════
    SCROLL PROGRESS
 ══════════════════════════════════════════════ */
 
@@ -1880,6 +1952,104 @@ footer a:hover { color:var(--blue) }
         <p>Sharing your photo publicly or revealing your location to get matches feels like a significant compromise.</p>
         <div class="pcard-stat" style="color:var(--violet)"><span class="counter" data-target="41" data-suffix="%">41%</span><span>of users have privacy concerns about location sharing</span></div>
       </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ SOURCES / RESEARCH ═════════════════════════════════════════════ -->
+<section class="sources section" id="sources" style="position:relative">
+  <div class="sec-bg" aria-hidden="true">
+    <div class="sec-dots"></div>
+    <div class="sec-orb" style="width:400px;height:400px;top:-80px;right:-60px;background:radial-gradient(circle,rgba(168,85,247,.07),transparent 70%);animation:o1 12s ease-in-out infinite"></div>
+    <div class="sec-orb" style="width:300px;height:300px;bottom:-60px;left:-40px;background:radial-gradient(circle,rgba(79,142,247,.06),transparent 70%);animation:o2 10s ease-in-out infinite"></div>
+  </div>
+  <div class="wrap">
+    <div class="sr" style="margin-bottom:48px">
+      <div class="label-row"><div class="label-line"></div><span class="label-text">Independent Research</span><div class="label-line"></div></div>
+      <h2 class="section-title">What the <span class="gt-violet">science says</span></h2>
+      <p class="section-sub">Peer-reviewed studies and independent journalism that shaped our analysis — so you can read the evidence yourself.</p>
+    </div>
+
+    <div class="sources-grid">
+
+      <!-- 1 Psychology Today — Swipe fatigue -->
+      <a href="https://www.psychologytoday.com/us/blog/sex-esteem/202502/swiping-with-agency-beating-dating-app-fatigue"
+         class="src-card sr d1" target="_blank" rel="noopener"
+         style="--src-color:#00A4D4;--src-bg:rgba(0,164,212,.12)">
+        <div class="src-top">
+          <span class="src-badge">Psychology Today</span>
+          <span class="src-year">2025</span>
+        </div>
+        <p class="src-title">Swiping With Agency: Beating Dating App Fatigue</p>
+        <p class="src-finding"><strong>79% of single daters show signs of burnout</strong>, averaging 50+ min/day on apps that function as mood-regulation tools rather than genuine connection facilitators.</p>
+        <span class="src-read">Read article <svg viewBox="0 0 12 12" fill="none" aria-hidden="true"><path d="M2.5 6h7M6.5 3.5L9 6l-2.5 2.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+      </a>
+
+      <!-- 2 National Geographic — Brain on dating apps -->
+      <a href="https://www.nationalgeographic.com/science/article/dating-apps-psychology-addiction-lawsuit"
+         class="src-card sr d2" target="_blank" rel="noopener"
+         style="--src-color:#DDAA00;--src-bg:rgba(221,170,0,.12)">
+        <div class="src-top">
+          <span class="src-badge">National Geographic</span>
+          <span class="src-year">2024</span>
+        </div>
+        <p class="src-title">This Is Your Brain on Dating Apps</p>
+        <p class="src-finding">Apps exploit <strong>dopamine-driven reward loops</strong> — swiping is deliberately more addictive than tapping, designed to retain paying subscribers rather than help them find relationships.</p>
+        <span class="src-read">Read article <svg viewBox="0 0 12 12" fill="none" aria-hidden="true"><path d="M2.5 6h7M6.5 3.5L9 6l-2.5 2.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+      </a>
+
+      <!-- 3 Psychology Today — People as replaceable -->
+      <a href="https://www.psychologytoday.com/us/blog/the-architecture-of-desire/202605/are-dating-apps-training-us-to-see-people-as-replaceable"
+         class="src-card sr d3" target="_blank" rel="noopener"
+         style="--src-color:#00A4D4;--src-bg:rgba(0,164,212,.12)">
+        <div class="src-top">
+          <span class="src-badge">Psychology Today</span>
+          <span class="src-year">2026</span>
+        </div>
+        <p class="src-title">Are Dating Apps Training Us to See People as Replaceable?</p>
+        <p class="src-finding">Rapid visual judgments and <strong>endless alternatives may psychologically condition</strong> users to treat potential partners as interchangeable — mistaking validation for intimacy.</p>
+        <span class="src-read">Read article <svg viewBox="0 0 12 12" fill="none" aria-hidden="true"><path d="M2.5 6h7M6.5 3.5L9 6l-2.5 2.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+      </a>
+
+      <!-- 4 NIH / BMC Psychology — Mental health -->
+      <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC7055053/"
+         class="src-card sr d1" target="_blank" rel="noopener"
+         style="--src-color:#4B8BDE;--src-bg:rgba(75,139,222,.12)">
+        <div class="src-top">
+          <span class="src-badge">NIH · BMC Psychology</span>
+          <span class="src-year">2020</span>
+        </div>
+        <p class="src-title">Swipe-Based Dating Apps and Mental Health Outcomes</p>
+        <p class="src-finding">Swipe-app users had <strong>2.5× higher odds of psychological distress</strong> and 1.9× higher odds of depression compared to non-users — worsening with usage frequency.</p>
+        <span class="src-read">Read study <svg viewBox="0 0 12 12" fill="none" aria-hidden="true"><path d="M2.5 6h7M6.5 3.5L9 6l-2.5 2.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+      </a>
+
+      <!-- 5 JMIR — Algorithms & loneliness -->
+      <a href="https://formative.jmir.org/2025/1/e70594"
+         class="src-card sr d2" target="_blank" rel="noopener"
+         style="--src-color:#7C5CFC;--src-bg:rgba(124,92,252,.12)">
+        <div class="src-top">
+          <span class="src-badge">JMIR · Lancaster University</span>
+          <span class="src-year">2025</span>
+        </div>
+        <p class="src-title">Are Dating App Algorithms Making Men Lonely?</p>
+        <p class="src-finding">Apps use <strong>algorithmic "match throttling"</strong> and pay-for-visibility mechanics specifically to maximise time on platform — not connections — raising measurable public health concerns.</p>
+        <span class="src-read">Read study <svg viewBox="0 0 12 12" fill="none" aria-hidden="true"><path d="M2.5 6h7M6.5 3.5L9 6l-2.5 2.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+      </a>
+
+      <!-- 6 SAGE / New Media & Society — Decision fatigue -->
+      <a href="https://journals.sagepub.com/doi/10.1177/14614448241270542"
+         class="src-card sr d3" target="_blank" rel="noopener"
+         style="--src-color:#E05C5C;--src-bg:rgba(224,92,92,.12)">
+        <div class="src-top">
+          <span class="src-badge">SAGE · New Media &amp; Society</span>
+          <span class="src-year">2024</span>
+        </div>
+        <p class="src-title">Partner Choice FOMO, Decision Fatigue &amp; Excessive Swiping</p>
+        <p class="src-finding">Fear of missing out drives <strong>decision fatigue and compulsive swiping</strong> in a self-reinforcing loop — users become cognitively exhausted and outsource judgment to algorithms.</p>
+        <span class="src-read">Read study <svg viewBox="0 0 12 12" fill="none" aria-hidden="true"><path d="M2.5 6h7M6.5 3.5L9 6l-2.5 2.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+      </a>
+
     </div>
   </div>
 </section>
