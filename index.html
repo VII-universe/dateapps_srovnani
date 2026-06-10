@@ -555,10 +555,15 @@ svg { display:block; flex-shrink:0 }
 .app-badge-small:hover { transform:scale(1.12) rotate(0deg) !important }
 .app-badge-small .logo-shine { --shine-dur:5s }
 
-.abs-hinge  { background:transparent; width:82px;  height:82px;  top:38%; left:0%;  animation:alfFloat2 7s   ease-in-out infinite .4s }
-.abs-happn  { background:transparent; width:62px;  height:62px;  top:38%; right:0%; animation:alfFloat1 6.4s ease-in-out infinite 1s }
-.abs-badoo  { background:transparent; width:74px;  height:74px;  bottom:28%; left:4%; animation:alfFloat3 5.8s ease-in-out infinite .7s }
-.abs-okcupid{ background:transparent; width:58px;  height:58px;  bottom:28%; right:4%; animation:alfFloat1 6.8s ease-in-out infinite 1.4s }
+.abs-hinge  { background:transparent; width:82px;  height:82px;  top:38%; left:0%;  animation:alfFloat2 7s ease-in-out infinite .4s, badgeGlow1 4s ease-in-out infinite }
+.abs-happn  { background:transparent; width:62px;  height:62px;  top:38%; right:0%; animation:alfFloat1 6.4s ease-in-out infinite 1s, badgeGlow2 5s ease-in-out infinite .8s }
+.abs-badoo  { background:transparent; width:74px;  height:74px;  bottom:28%; left:4%; animation:alfFloat3 5.8s ease-in-out infinite .7s, badgeGlow3 4.5s ease-in-out infinite 1.5s }
+.abs-okcupid{ background:transparent; width:58px;  height:58px;  bottom:28%; right:4%; animation:alfFloat1 6.8s ease-in-out infinite 1.4s, badgeGlow4 3.8s ease-in-out infinite .4s }
+
+@keyframes badgeGlow1{0%,100%{box-shadow:0 4px 14px rgba(230,30,100,.25)}50%{box-shadow:0 6px 22px rgba(230,30,100,.5)}}
+@keyframes badgeGlow2{0%,100%{box-shadow:0 4px 14px rgba(255,60,95,.22)}50%{box-shadow:0 6px 22px rgba(255,60,95,.45)}}
+@keyframes badgeGlow3{0%,100%{box-shadow:0 4px 14px rgba(107,58,224,.25)}50%{box-shadow:0 6px 22px rgba(107,58,224,.5)}}
+@keyframes badgeGlow4{0%,100%{box-shadow:0 4px 14px rgba(33,151,243,.22)}50%{box-shadow:0 6px 22px rgba(33,151,243,.48)}}
 
 /* ══════════════════════════════════════════════
    PROBLEM SECTION
