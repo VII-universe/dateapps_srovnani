@@ -484,57 +484,62 @@ svg { display:block; flex-shrink:0 }
 /* floating app logos — big, scattered */
 .app-logo-float {
   position:absolute; z-index:2;
-  border-radius:26px;
+  border-radius:34px;
   display:flex; align-items:center; justify-content:center;
   transition:transform .3s var(--spring);
   cursor:default;
+  overflow:hidden;
 }
 .app-logo-float:hover { transform:scale(1.1) rotate(0deg) !important }
 
+/* shine sweep overlay */
+.logo-shine {
+  position:absolute; inset:0; z-index:3; pointer-events:none;
+  background:linear-gradient(105deg, transparent 20%, rgba(255,255,255,.45) 50%, transparent 80%);
+  transform:translateX(-160%);
+  animation:logoShineSweep var(--shine-dur,3.8s) ease-in-out infinite var(--shine-del,0s);
+}
+@keyframes logoShineSweep{0%,50%{transform:translateX(-160%)}72%,100%{transform:translateX(260%)}}
+
+@keyframes tinderGlow{
+  0%,100%{box-shadow:0 20px 60px rgba(254,60,114,.55),var(--sh-md)}
+  50%{box-shadow:0 28px 90px rgba(254,60,114,.95),0 0 60px rgba(254,60,114,.45),var(--sh-md)}
+}
+@keyframes bumbleGlow{
+  0%,100%{box-shadow:0 20px 60px rgba(255,198,41,.55),var(--sh-md)}
+  50%{box-shadow:0 28px 90px rgba(255,198,41,.95),0 0 60px rgba(255,198,41,.45),var(--sh-md)}
+}
+@keyframes metemiGlow{
+  0%,100%{box-shadow:0 24px 70px rgba(79,142,247,.6),var(--sh-md)}
+  50%{box-shadow:0 32px 100px rgba(79,142,247,1),0 0 70px rgba(79,142,247,.55),var(--sh-md)}
+}
+
 .alf-tinder {
-  width:148px; height:148px;
-  border:none; background:transparent; overflow:hidden;
-  box-shadow:0 20px 60px rgba(254,60,114,.5), var(--sh-md);
-  border-radius:34px;
-  top:3%; left:20%;
-  animation:alfFloat1 5.2s ease-in-out infinite;
+  width:200px; height:200px;
+  border:none; background:transparent;
+  box-shadow:0 20px 60px rgba(254,60,114,.55),var(--sh-md);
+  top:3%; left:3%;
+  animation:alfFloat1 5.2s ease-in-out infinite, tinderGlow 3s ease-in-out infinite;
 }
 .alf-bumble {
-  width:154px; height:138px;
-  border:none; background:transparent; overflow:visible;
-  box-shadow:none;
-  filter:drop-shadow(0 16px 40px rgba(255,198,41,.55));
-  border-radius:0;
-  bottom:6%; right:18%;
-  animation:alfFloat2 6.1s ease-in-out infinite;
+  width:200px; height:180px;
+  border:none; background:transparent;
+  box-shadow:0 20px 60px rgba(255,198,41,.55),var(--sh-md);
+  top:3%; right:2%;
+  animation:alfFloat2 6.1s ease-in-out infinite, bumbleGlow 3.5s ease-in-out infinite .6s;
 }
 .alf-metemi {
-  width:144px; height:144px; padding:0; overflow:hidden;
+  width:220px; height:220px; padding:0;
   border:none;
-  box-shadow:0 20px 60px rgba(79,142,247,.5), var(--sh-md);
-  border-radius:34px;
-  top:52%; left:16%;
-  animation:alfFloat3 4.7s ease-in-out infinite;
+  box-shadow:0 24px 70px rgba(79,142,247,.6),var(--sh-md);
+  bottom:3%; left:calc(50% - 110px);
+  animation:alfFloat3 4.7s ease-in-out infinite, metemiGlow 2.8s ease-in-out infinite 1.2s;
 }
 .alf-metemi img { width:100%; height:100%; object-fit:cover; display:block }
 
-@keyframes alfFloat1{0%,100%{transform:translateY(0) rotate(-5deg)}50%{transform:translateY(-14px) rotate(-2deg)}}
-@keyframes alfFloat2{0%,100%{transform:translateY(0) rotate(4deg)}50%{transform:translateY(-12px) rotate(6deg)}}
-@keyframes alfFloat3{0%,100%{transform:translateY(0) rotate(-2deg)}50%{transform:translateY(-10px) rotate(1deg)}}
-
-/* speed badge */
-.speed-badge {
-  position:absolute; right:-20px; bottom:26%;
-  background:linear-gradient(135deg,var(--green),var(--teal));
-  color:#0D0E1A; font-size:11.5px; font-weight:800;
-  padding:8px 14px; border-radius:999px;
-  display:flex; align-items:center; gap:5px;
-  box-shadow:0 4px 20px rgba(52,211,153,.45);
-  animation:badgeFloat 4s ease-in-out infinite;
-  z-index:4; white-space:nowrap;
-}
-@media(max-width:940px){ .speed-badge{right:0} }
-@keyframes badgeFloat{0%,100%{transform:translateY(0)}50%{transform:translateY(-6px)}}
+@keyframes alfFloat1{0%,100%{transform:translateY(0) rotate(-5deg)}50%{transform:translateY(-16px) rotate(-2deg)}}
+@keyframes alfFloat2{0%,100%{transform:translateY(0) rotate(4deg)}50%{transform:translateY(-14px) rotate(6deg)}}
+@keyframes alfFloat3{0%,100%{transform:translateY(0) rotate(-2deg)}50%{transform:translateY(-12px) rotate(1deg)}}
 
 /* ══════════════════════════════════════════════
    PROBLEM SECTION
@@ -1199,30 +1204,6 @@ footer a:hover { color:var(--blue) }
         <div class="match-scene">
           <div class="scene-glow" aria-hidden="true"></div>
 
-          <!-- Left profile card: Tinder user -->
-          <div class="profile-card pc-left">
-            <div class="pc-avatar" style="background:rgba(255,68,88,.15)">🧑‍🦱</div>
-            <div class="pc-name">Alex, 26</div>
-            <div class="pc-sub">On Tinder</div>
-            <div class="pc-badge pc-badge-tinder">🔥 Swiping</div>
-            <div class="pc-stat">
-              <svg viewBox="0 0 12 12" fill="none" aria-hidden="true"><circle cx="6" cy="6" r="5" stroke="currentColor" stroke-width="1.3"/><path d="M6 3.5v2.5l1.5 1" stroke="currentColor" stroke-width="1.3" stroke-linecap="round"/></svg>
-              3 weeks waiting
-            </div>
-          </div>
-
-          <!-- Right profile card: Metemi user -->
-          <div class="profile-card pc-right">
-            <div class="pc-avatar" style="background:rgba(79,142,247,.15)">👩‍🦰</div>
-            <div class="pc-name">Sara, 24</div>
-            <div class="pc-sub">On Metemi</div>
-            <div class="pc-badge pc-badge-metemi" style="display:flex;align-items:center;gap:4px"><img src="metemi_logo.svg" alt="" width="12" height="12" style="border-radius:3px"/> Live now</div>
-            <div class="pc-stat">
-              <svg viewBox="0 0 12 12" fill="none" aria-hidden="true"><circle cx="6" cy="6" r="5" stroke="currentColor" stroke-width="1.3"/><path d="M6 3.5v2.5l1.5 1" stroke="currentColor" stroke-width="1.3" stroke-linecap="round"/></svg>
-              0.4 km away
-            </div>
-          </div>
-
           <!-- Sparkle dots -->
           <div class="sparkle" style="width:8px;height:8px;background:var(--blue);top:22%;left:30%;--dur:3.2s;--del:0s;--tx:-6px;--ty:-10px" aria-hidden="true"></div>
           <div class="sparkle" style="width:6px;height:6px;background:var(--pink);top:25%;right:28%;--dur:2.8s;--del:.5s;--tx:8px;--ty:-8px" aria-hidden="true"></div>
@@ -1237,31 +1218,18 @@ footer a:hover { color:var(--blue) }
             </svg>
           </div>
 
-          <!-- App logos — big, scattered, real brand logos -->
+          <!-- App logos — big, animated, with shine effect -->
           <div class="app-logo-float alf-tinder" title="Tinder" aria-hidden="true">
             <img src="Tinder.svg" alt="Tinder" style="width:100%;height:100%;display:block;object-fit:cover"/>
+            <div class="logo-shine" style="--shine-dur:4s;--shine-del:0s" aria-hidden="true"></div>
           </div>
           <div class="app-logo-float alf-bumble" title="Bumble" aria-hidden="true">
             <img src="bumble.svg" alt="Bumble" style="width:100%;height:100%;display:block;object-fit:contain"/>
+            <div class="logo-shine" style="--shine-dur:4.4s;--shine-del:1.4s" aria-hidden="true"></div>
           </div>
-          <div class="app-logo-float alf-metemi" title="Metemi" aria-hidden="true"><img src="metemi_logo.svg" alt="Metemi"/></div>
-
-          <!-- Notification 1: top -->
-          <div class="notif n1">
-            <div class="notif-icon" style="background:rgba(52,211,153,.15)">✅</div>
-            <span>Match nearby — <strong style="color:var(--green)">now</strong></span>
-          </div>
-
-          <!-- Notification 2: bottom -->
-          <div class="notif n2">
-            <div class="notif-icon" style="background:rgba(251,191,36,.15)">☕</div>
-            <span>Coffee in <strong style="color:var(--amber)">~2 hrs</strong></span>
-          </div>
-
-          <!-- Speed badge -->
-          <div class="speed-badge" aria-hidden="true">
-            <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M7 2a5 5 0 100 10A5 5 0 007 2zm0 2v3l2 1.5" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/></svg>
-            2× faster to IRL
+          <div class="app-logo-float alf-metemi" title="Metemi" aria-hidden="true">
+            <img src="metemi_logo.svg" alt="Metemi" style="width:100%;height:100%;object-fit:cover;display:block"/>
+            <div class="logo-shine" style="--shine-dur:3.6s;--shine-del:2.6s" aria-hidden="true"></div>
           </div>
 
         </div>
