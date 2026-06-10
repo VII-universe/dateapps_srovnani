@@ -524,18 +524,19 @@ svg { display:block; flex-shrink:0 }
 .alf-bumble {
   width:200px; height:180px;
   border:none; background:transparent;
+  padding:15px;
   box-shadow:0 20px 60px rgba(255,198,41,.55),var(--sh-md);
   top:3%; right:2%;
   animation:alfFloat2 6.1s ease-in-out infinite, bumbleGlow 3.5s ease-in-out infinite .6s;
 }
 .alf-metemi {
-  width:220px; height:220px; padding:0;
+  width:220px; height:220px; padding:17px;
   border:none;
   box-shadow:0 24px 70px rgba(79,142,247,.6),var(--sh-md);
   bottom:3%; left:calc(50% - 110px);
   animation:alfFloat3 4.7s ease-in-out infinite, metemiGlow 2.8s ease-in-out infinite 1.2s;
 }
-.alf-metemi img { width:100%; height:100%; object-fit:cover; display:block }
+.alf-metemi img { width:100%; height:100%; object-fit:contain; display:block }
 
 @keyframes alfFloat1{0%,100%{transform:translateY(0) rotate(-5deg)}50%{transform:translateY(-16px) rotate(-2deg)}}
 @keyframes alfFloat2{0%,100%{transform:translateY(0) rotate(4deg)}50%{transform:translateY(-14px) rotate(6deg)}}
